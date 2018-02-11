@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>FishMeat</defName>
+    <label>raw fish</label>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+    <description>Raw fish. Requires refriguration or it will spoil quickly.</description>
+    <graphicData>
+      <texPath>Things/Item/Fish/FishMeat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.045</Mass>
+      <Beauty>-4</Beauty>
+      <MaxHitPoints>60</MaxHitPoints>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_FoodPoisoningChance">
+        <humanlikeOnly>true</humanlikeOnly>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <foodType>Meat</foodType>
+      <nutrition>0.05</nutrition>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+      <tasteThought>AteRawFood</tasteThought>
+    </ingestible>
+    <socialPropernessMatters>true</socialPropernessMatters>
+  </ThingDef>
+</Defs>

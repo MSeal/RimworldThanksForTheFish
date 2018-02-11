@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+  <SoundDef>
+    <defName>FishReel</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Recipes/Fishing/FishReel</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>10</min>        
+          <max>10</max>
+        </volumeRange>      
+        <distRange>
+          <min>10</min>        
+          <max>50</max>
+        </distRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+ </SoundDef>
+</Defs>

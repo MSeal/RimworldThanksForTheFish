@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+  <RecipeDef>
+    <defName>CatchFish</defName>
+    <label>catch fish</label>
+    <description>Hooks some worms and snatch some fish.</description>
+    <jobString>Fishing.</jobString>
+    <workAmount>1000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>FishReel</soundWorking>
+    <products>
+      <FishMeat>5</FishMeat>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <ingredients>
+      <li>
+        <count>0</count>
+      </li>
+    </ingredients>
+ </RecipeDef>
+</Defs>
