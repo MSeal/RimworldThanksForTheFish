@@ -13,11 +13,6 @@
     <products>
       <FishMeat>5</FishMeat>
     </products>
-    <workSkill>Cooking</workSkill>
-    <ingredients>
-      <li>
-        <count>0</count>
-      </li>
-    </ingredients>
+    <workSkill>Animals</workSkill>
  </RecipeDef>
 </Defs>

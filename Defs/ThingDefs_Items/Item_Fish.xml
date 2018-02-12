@@ -9,7 +9,7 @@
       <li>MeatRaw</li>
     </thingCategories>
     <stackLimit>75</stackLimit>
-    <description>Raw fish. Requires refriguration or it will spoil quickly.</description>
+    <description>Raw fish. Requires refrigeration or it will spoil quickly.</description>
     <graphicData>
       <texPath>Things/Item/Fish/FishMeat</texPath>
       <graphicClass>Graphic_Single</graphicClass>

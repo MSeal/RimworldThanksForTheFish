@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <WorkTypeDef>
+    <defName>Fishing</defName>
+    <labelShort>Fish</labelShort>
+    <pawnLabel>Fisher</pawnLabel>
+    <gerundLabel>fishing</gerundLabel>
+    <description>Hook, line, and sinker. Catch some fish to feed your colony.</description>
+    <verb>Fish</verb>
+    <naturalPriority>1100</naturalPriority>
+    <relevantSkills>
+      <li>Animals</li>
+    </relevantSkills>
+    <workTags>
+      <li>Animals</li>
+    </workTags>
+  </WorkTypeDef>
+</Defs>

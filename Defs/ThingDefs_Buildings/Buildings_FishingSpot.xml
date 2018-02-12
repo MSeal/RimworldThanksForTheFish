@@ -18,11 +18,11 @@
     <placeWorkers>
       <li>AllTheFish.PlaceWorker_DeepWaterFishing</li>
     </placeWorkers>
+    <tickerType>Rare</tickerType>
     <scatterableOnMapGen>false</scatterableOnMapGen>
     <useHitPoints>False</useHitPoints>
     <size>(1,1)</size>
-    <designationCategory>Production</designationCategory>
-    <designationHotKey>Misc1</designationHotKey>
+    <designationCategory>Misc</designationCategory>
     <passability>Standable</passability>
     <blockWind>false</blockWind>
     <holdsRoof>false</holdsRoof>

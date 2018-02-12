@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Name="FishingMote" Abstract="True">
+        <thingClass>MoteThrown</thingClass>
+        <label>Mote</label>
+        <category>Mote</category>
+        <graphicData>
+            <graphicClass>Graphic_Mote</graphicClass>
+            <shaderType>Mote</shaderType>
+        </graphicData>
+        <altitudeLayer>MoteLow</altitudeLayer>
+        <tickerType>Normal</tickerType>
+        <useHitPoints>false</useHitPoints>
+        <isSaveable>false</isSaveable>
+        <rotatable>false</rotatable>
+    </ThingDef>
+
+    <ThingDef ParentName="FishingMote">
+        <defName>FishingRodNorth</defName>
+        <description>Fishing rod.</description>
+        <mote>
+            <solidTime>1500</solidTime>
+        </mote>
+        <graphicData>
+            <texPath>Mote/FishingRod/RodNorth</texPath>
+        </graphicData>
+        <altitudeLayer>MoteLow</altitudeLayer>
+    </ThingDef>
+
+    <ThingDef ParentName="FishingMote">
+        <defName>FishingRodEast</defName>
+        <description>Fishing rod.</description>
+        <mote>
+            <solidTime>1500</solidTime>
+        </mote>
+        <graphicData>
+            <texPath>Mote/FishingRod/RodEast</texPath>
+        </graphicData>
+        <altitudeLayer>MoteLow</altitudeLayer>
+    </ThingDef>
+
+    <ThingDef ParentName="FishingMote">
+        <defName>FishingRodSouth</defName>
+        <description>Fishing rod.</description>
+        <mote>
+            <solidTime>1500</solidTime>
+        </mote>
+        <graphicData>
+            <texPath>Mote/FishingRod/RodSouth</texPath>
+        </graphicData>
+        <altitudeLayer>MoteLow</altitudeLayer>
+    </ThingDef>
+
+    <ThingDef ParentName="FishingMote">
+        <defName>FishingRodWest</defName>
+        <description>Fishing rod.</description>
+        <mote>
+            <solidTime>1500</solidTime>
+        </mote>
+        <graphicData>
+            <texPath>Mote/FishingRod/RodWest</texPath>
+        </graphicData>
+        <altitudeLayer>MoteLow</altitudeLayer>
+    </ThingDef>
+</Defs>
