@@ -6,12 +6,12 @@
     <label>catch fish</label>
     <description>Hooks some worms and snatch some fish.</description>
     <jobString>Fishing.</jobString>
-    <workAmount>1000</workAmount>
+    <workAmount>2000</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>FishReel</soundWorking>
     <products>
-      <FishMeat>5</FishMeat>
+      <DeadFish>1</DeadFish>
     </products>
     <workSkill>Animals</workSkill>
  </RecipeDef>

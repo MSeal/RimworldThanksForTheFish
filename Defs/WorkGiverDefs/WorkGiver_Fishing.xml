@@ -5,7 +5,7 @@
         <defName>WorkGiver_CatchFish</defName>
         <label>catch fish</label>
         <giverClass>WorkGiver_DoBill</giverClass>
-        <workType>Fishing</workType>
+        <workType>Handling</workType>
         <fixedBillGiverDefs>
             <li>FishingSpot</li>
         </fixedBillGiverDefs>

@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Defs>
-    <ThingDef Name="FishingMote" Abstract="True">
-        <thingClass>MoteThrown</thingClass>
-        <label>Mote</label>
-        <category>Mote</category>
-        <graphicData>
-            <graphicClass>Graphic_Mote</graphicClass>
-            <shaderType>Mote</shaderType>
-        </graphicData>
-        <altitudeLayer>MoteLow</altitudeLayer>
-        <tickerType>Normal</tickerType>
-        <useHitPoints>false</useHitPoints>
-        <isSaveable>false</isSaveable>
-        <rotatable>false</rotatable>
-    </ThingDef>
 
-    <ThingDef ParentName="FishingMote">
+<Defs>
+    <ThingDef ParentName="MoteBase">
         <defName>FishingRodNorth</defName>
         <description>Fishing rod.</description>
         <mote>
@@ -27,7 +13,7 @@
         <altitudeLayer>MoteLow</altitudeLayer>
     </ThingDef>
 
-    <ThingDef ParentName="FishingMote">
+    <ThingDef ParentName="MoteBase">
         <defName>FishingRodEast</defName>
         <description>Fishing rod.</description>
         <mote>
@@ -39,7 +25,7 @@
         <altitudeLayer>MoteLow</altitudeLayer>
     </ThingDef>
 
-    <ThingDef ParentName="FishingMote">
+    <ThingDef ParentName="MoteBase">
         <defName>FishingRodSouth</defName>
         <description>Fishing rod.</description>
         <mote>
@@ -51,7 +37,7 @@
         <altitudeLayer>MoteLow</altitudeLayer>
     </ThingDef>
 
-    <ThingDef ParentName="FishingMote">
+    <ThingDef ParentName="MoteBase">
         <defName>FishingRodWest</defName>
         <description>Fishing rod.</description>
         <mote>

@@ -2,24 +2,78 @@
 
 <Defs>
   <ThingDef ParentName="OrganicProductBase">
+    <defName>DeadFish</defName>
+    <label>fish corpse</label>
+    <description>Raw fish. Cook it up for a tasty meal.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>CorpsesAnimal</li>
+    </thingCategories>
+    <category>Item</category>
+    <graphicData>
+      <texPath>Things/Item/Corpse</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <butcherProducts>
+      <FishMeat>5</FishMeat>
+    </butcherProducts>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <stackLimit>15</stackLimit>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>-4</Beauty>
+      <DeteriorationRate>10</DeteriorationRate>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_FoodPoisoningChance">
+        <humanlikeOnly>true</humanlikeOnly>
+      </li>
+    </comps>
+    <tickerType>Normal</tickerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+      <nutrition>0.2</nutrition>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+      <tasteThought>AteRawFood</tasteThought>
+    </ingestible>
+    <socialPropernessMatters>true</socialPropernessMatters>
+  </ThingDef>
+
+  <ThingDef ParentName="OrganicProductBase">
     <defName>FishMeat</defName>
-    <label>raw fish</label>
+    <label>raw fish meat</label>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
       <li>MeatRaw</li>
     </thingCategories>
+    <useHitPoints>true</useHitPoints>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
     <stackLimit>75</stackLimit>
     <description>Raw fish. Requires refrigeration or it will spoil quickly.</description>
     <graphicData>
-      <texPath>Things/Item/Fish/FishMeat</texPath>
+      <texPath>Things/Item/Meat/FishMeat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>
       <Mass>0.045</Mass>
-      <Beauty>-4</Beauty>
       <MaxHitPoints>60</MaxHitPoints>
-      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-4</Beauty>
+      <DeteriorationRate>10</DeteriorationRate>
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
@@ -30,9 +84,11 @@
         <humanlikeOnly>true</humanlikeOnly>
       </li>
     </comps>
+    <tickerType>Normal</tickerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
     <ingestible>
-      <preferability>RawBad</preferability>
       <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
       <nutrition>0.05</nutrition>
       <ingestEffect>EatMeat</ingestEffect>
       <ingestSound>RawMeat_Eat</ingestSound>
