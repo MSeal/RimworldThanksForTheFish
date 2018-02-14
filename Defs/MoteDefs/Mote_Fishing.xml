@@ -10,7 +10,7 @@
         <graphicData>
             <texPath>Mote/FishingRod/RodNorth</texPath>
         </graphicData>
-        <altitudeLayer>MoteLow</altitudeLayer>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
     </ThingDef>
 
     <ThingDef ParentName="MoteBase">
@@ -22,7 +22,7 @@
         <graphicData>
             <texPath>Mote/FishingRod/RodEast</texPath>
         </graphicData>
-        <altitudeLayer>MoteLow</altitudeLayer>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
     </ThingDef>
 
     <ThingDef ParentName="MoteBase">
@@ -34,7 +34,7 @@
         <graphicData>
             <texPath>Mote/FishingRod/RodSouth</texPath>
         </graphicData>
-        <altitudeLayer>MoteLow</altitudeLayer>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
     </ThingDef>
 
     <ThingDef ParentName="MoteBase">
@@ -46,6 +46,6 @@
         <graphicData>
             <texPath>Mote/FishingRod/RodWest</texPath>
         </graphicData>
-        <altitudeLayer>MoteLow</altitudeLayer>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
     </ThingDef>
 </Defs>

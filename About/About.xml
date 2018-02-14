@@ -4,7 +4,28 @@
     <author>Pyrce</author>
     <url>https://github.com/MSeal/RimworldThanksForTheFish</url>
     <targetVersion>0.18.1722</targetVersion>
-    <description>[B18] Basic Fishing mod (yea)
+    <description>[B18] Basic Fishing mod
+
+A nice description here (maybe with some sarcastic note about how everything causes lag).
+
+Basic functionality in place. Setup a Fishing Spot from the Misc Tab, add a Catch Fish bill, make sure Animal Handling skills are active. Pawns should now fish for you.
+
+Fishing is sped up by Animal Handling skill, but it provides no skill-ups.
+
+WARNING: NOT balance tested yet
+- is fishing speed too fast/slow?
+-- with 0 skill
+-- with 10 skill
+-- with 20 skill
+- do yields make sense?
+- does fish rot too slow/fast when not refrigerated?
+-- meant to be a fast rot food; adds risk of heat waves/solar flares wiping it out when other foods would last
+- is that fishing reel sound too loud?
+
+TODOs:
+- make fishing spots not able to be placed near each other
+- get a better fish graphic
+- add language translations
 
 Version: 0.18.0
     </description>
