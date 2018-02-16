@@ -8,7 +8,7 @@
 
 A nice description here (maybe with some sarcastic note about how everything causes lag).
 
-Basic functionality in place. Setup a Fishing Spot from the Misc Tab, add a Catch Fish bill, make sure Animal Handling skills are active. Pawns should now fish for you.
+Basic functionality in place. Setup a Fishing Spot from the Production Tab, add a Catch Fish bill, make sure Animal Handling skills are active. Pawns should now fish for you.
 
 Fishing is sped up by Animal Handling skill, but it provides no skill-ups.
 
@@ -23,10 +23,10 @@ WARNING: NOT balance tested yet
 - is that fishing reel sound too loud?
 
 TODOs:
-- make fishing spots not able to be placed near each other
 - get a better fish graphic
+- change the fishing spot graphic
 - add language translations
 
-Version: 0.18.0
+Version: 0.18.1
     </description>
 </ModMetaData>

@@ -22,7 +22,7 @@
     <scatterableOnMapGen>false</scatterableOnMapGen>
     <useHitPoints>False</useHitPoints>
     <size>(1,1)</size>
-    <designationCategory>Misc</designationCategory>
+    <designationCategory>Production</designationCategory>
     <passability>Standable</passability>
     <blockWind>false</blockWind>
     <holdsRoof>false</holdsRoof>

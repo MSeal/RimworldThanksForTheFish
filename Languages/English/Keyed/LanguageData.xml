@@ -2,4 +2,5 @@
 
 <LanguageData>
     <AllTheFish.DeepWaterFishing>Must be placed over deep water</AllTheFish.DeepWaterFishing>
+    <AllTheFish.CloseFishing>Cannot be placed so close to another fishing spot</AllTheFish.CloseFishing>
 </LanguageData>
