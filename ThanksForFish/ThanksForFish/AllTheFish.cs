@@ -84,13 +84,13 @@ namespace AllTheFish {
         }
 
         public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null) {
+            if (!DeepWaterTerrain(map.terrainGrid.TerrainAt(loc))) {
+                return new AcceptanceReport("AllTheFish.DeepWaterFishing".Translate());
+            }
             if (FishingSpotConnectedByWater(loc, MIN_FISHING_RADIUS, map)) {
                 return new AcceptanceReport("AllTheFish.CloseFishing".Translate());
             }
-            if (DeepWaterTerrain(map.terrainGrid.TerrainAt(loc))) {
-                return true;
-            }
-            return new AcceptanceReport("AllTheFish.DeepWaterFishing".Translate());
+            return true;
         }
     }
 
@@ -98,12 +98,10 @@ namespace AllTheFish {
         // Thanks for making the more advanced version of this private... :/
         protected bool ThingIsUsableBillGiver(Thing thing) {
             Pawn pawn = thing as Pawn;
-            if (this.def.fixedBillGiverDefs != null && this.def.fixedBillGiverDefs.Contains(thing.def))
-            {
+            if (this.def.fixedBillGiverDefs != null && this.def.fixedBillGiverDefs.Contains(thing.def)) {
                 return true;
             }
-            if (pawn != null)
-            {
+            if (pawn != null) {
                 return (this.def.billGiversAllHumanlikes && pawn.RaceProps.Humanlike) ||
                     (this.def.billGiversAllMechanoids && pawn.RaceProps.IsMechanoid) ||
                     (this.def.billGiversAllAnimals && pawn.RaceProps.Animal);
