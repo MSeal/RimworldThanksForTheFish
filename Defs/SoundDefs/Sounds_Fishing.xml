@@ -3,7 +3,6 @@
 <Defs>
   <SoundDef>
     <defName>FishReel</defName>
-    <sustain>True</sustain>
     <context>MapOnly</context>
     <eventNames />
     <maxSimultaneous>1</maxSimultaneous>
@@ -22,7 +21,7 @@
         </volumeRange>      
         <distRange>
           <min>10</min>        
-          <max>50</max>
+          <max>25</max>
         </distRange>      
         <sustainLoop>False</sustainLoop>
       </li>
