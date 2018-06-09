@@ -1,5 +1,7 @@
 ﻿# RimworldThanksForTheFish
 
+![Version](https://img.shields.io/badge/Rimworld-B18-brightgreen.svg)
+
 ![Alt text](About/Preview.png?raw=true "ThanksForAllTheFish")
 
 [B18] A simple fishing mod designed to provide a food supplement to colonies with access to water.
@@ -11,8 +13,6 @@ FishingSpots have a few basic restrictions. They must be placed in deep water. Y
 Fishing is sped up by the Animal Handling skill, and has a slow skill gain attached as a benefit for fishing all day.
 
 Requires HugsLib to be installed earlier in the mod load order.
-
-### Version: 0.18.1
 
 ## Current (Sometimes Crude) Translations:
 - English
