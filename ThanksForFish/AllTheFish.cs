@@ -82,15 +82,10 @@ namespace AllTheFish {
     }
 
     public class DolphinAway : Skyfaller {
-        // TODO Why is this not respected
-        public virtual bool ShouldDrawRotated {
-            get {
-                return true;
-            }
-        }
+        public int rotationAngle = 0;
 
         public override void Tick() {
-            this.Rotation = Rot4.FromAngleFlat(this.Rotation.AsAngle + 1);
+            this.rotationAngle += 3;
             base.Tick();
         }
 
@@ -99,6 +94,10 @@ namespace AllTheFish {
             if (!respawningAfterLoad) {
                 this.angle = 30;
             }
+        }
+
+        public override void DrawAt(Vector3 drawLoc, bool flip = false) {
+            this.Graphic.Draw(drawLoc, (!flip) ? this.Rotation : this.Rotation.Opposite, this, this.rotationAngle);
         }
     }
 

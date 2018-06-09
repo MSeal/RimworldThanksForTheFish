@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+  <AllTheFish.DeepWaterFishing>Muss über tiefes Wasser gelegt werden</AllTheFish.DeepWaterFishing>
+  <AllTheFish.CloseFishing>Kann nicht so nah an einem anderen Angelplatz platziert werden</AllTheFish.CloseFishing>
+  <AllTheFish.TooSmallFishing>Muss in eine größere Wasserquelle gelegt werden</AllTheFish.TooSmallFishing>
+</LanguageData>

@@ -7,7 +7,7 @@
     <description>A place to fish up a meal.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Building/Production/CraftingSpot</texPath>
+      <texPath>Things/Building/Production/FishingSpot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
