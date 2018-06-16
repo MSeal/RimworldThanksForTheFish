@@ -54,3 +54,9 @@ Link me translation fixes/additions and I'll add them in.
 #### What was that flying by my screen?
 
 > Translating... "Oh say, does that star-spangled banner yet wave. O'er the land of the free and the home of the brave?" ...
+
+## Changes
+
+#### 0.18.1
+
+> Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".

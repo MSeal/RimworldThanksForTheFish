@@ -304,4 +304,8 @@ namespace AllTheFish {
             }
         }
     }
+
+  public class ButcherCorpseFlesh : RecipeDef {
+
+  }
 }

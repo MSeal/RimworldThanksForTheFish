@@ -7,7 +7,7 @@
     <description>Raw fish. Cook it up for a tasty meal.</description>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
-      <li>CorpsesAnimal</li>
+      <li>CorpsesFish</li>
     </thingCategories>
     <category>Item</category>
     <graphicData>

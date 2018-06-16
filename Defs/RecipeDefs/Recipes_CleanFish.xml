@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef Abstract="true" Name="CleanFishBase">
+    <recipeUsers>
+      <li>TableButcher</li>
+    </recipeUsers>
+    <label>clean fish</label>
+    <description>Cleans a fish to obtain its meat in usable form.</description>
+    <jobString>Cleaning.</jobString>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <fixedIngredientFilter>
+      <categories>
+        <li>CorpsesFish</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>CorpsesFish</li>
+      </categories>
+    </defaultIngredientFilter>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CleanFishBase">
+    <defName>CleanFish</defName>
+    <label>clean fish</label>
+    <workAmount>100</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CorpsesFish</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <FishMeat>5</FishMeat>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CleanFishBase">
+    <defName>CleanFishBulk</defName>
+    <label>clean 8 fish</label>
+    <workAmount>800</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>CorpsesFish</li>
+          </categories>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <products>
+      <FishMeat>40</FishMeat>
+    </products>
+  </RecipeDef>
+</Defs>

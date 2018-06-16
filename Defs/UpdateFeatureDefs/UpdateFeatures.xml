@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
+    <modNameReadable>Thanks For All The Fish</modNameReadable>
+    <modIdentifier>AllTheFish</modIdentifier>
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1406744458</linkUrl>
+  </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_18_1</defName>
+    <assemblyVersion>0.18.1</assemblyVersion>
+    <content>Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".|img:Things/Item/Corpse/Fish_a,Things/Item/Meat/FishMeat|caption:now faster.</content>
+  </HugsLib.UpdateFeatureDef>
+</Defs>
