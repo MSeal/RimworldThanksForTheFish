@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CleanFish.label>nettoyer le poisson</CleanFish.label>
+  <CleanFish.description>Nettoie un poisson pour obtenir sa viande sous une forme utilisable.</CleanFish.description>
+  <CleanFish.jobString>Escorxa.</CleanFish.jobString>
+
+  <CleanFishBulk.label>nettoyer 8 poissons</CleanFishBulk.label>
+  <CleanFishBulk.description>Nettoie un poisson pour obtenir sa viande sous une forme utilisable.</CleanFishBulk.description>
+  <CleanFishBulk.jobString>Escorxa.</CleanFishBulk.jobString>
+</LanguageData>

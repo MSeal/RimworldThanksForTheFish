@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CleanFish.label>魚をきれいにする</CleanFish.label>
+  <CleanFish.description>使用可能な形で肉を得るために魚を洗浄します。</CleanFish.description>
+  <CleanFish.jobString>繁殖。</CleanFish.jobString>
+
+  <CleanFishBulk.label>クリーン8魚</CleanFishBulk.label>
+  <CleanFishBulk.description>使用可能な形で肉を得るために魚を洗浄します。</CleanFishBulk.description>
+  <CleanFishBulk.jobString>繁殖。</CleanFishBulk.jobString>
+</LanguageData>

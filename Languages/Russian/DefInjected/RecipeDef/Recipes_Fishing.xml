@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CatchFish.label>поймать рыбу</CatchFish.label>
+  <CatchFish.description>Захватывает некоторые черви и вырывает рыбу.</CatchFish.description>
+  <CatchFish.jobString>Рыбалка.</CatchFish.jobString>
+</LanguageData>

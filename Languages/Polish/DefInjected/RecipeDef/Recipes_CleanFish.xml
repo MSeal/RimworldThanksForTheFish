@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CleanFish.label>wyczyść rybę</CleanFish.label>
+  <CleanFish.description>Czyści rybę w celu uzyskania jej mięsa w postaci użytkowej.</CleanFish.description>
+  <CleanFish.jobString>Rozbiór.</CleanFish.jobString>
+
+  <CleanFishBulk.label>wyczyść 8 ryb</CleanFishBulk.label>
+  <CleanFishBulk.description>Czyści rybę w celu uzyskania jej mięsa w postaci użytkowej.</CleanFishBulk.description>
+  <CleanFishBulk.jobString>Rozbiór.</CleanFishBulk.jobString>
+</LanguageData>

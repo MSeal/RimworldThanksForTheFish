@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CleanFish.label>einen fisch säubern</CleanFish.label>
+  <CleanFish.description>Reinigt einen Fisch, um sein Fleisch in verwertbarer Form zu erhalten.</CleanFish.description>
+  <CleanFish.jobString>Schlachtet Kreatur.</CleanFish.jobString>
+
+  <CleanFishBulk.label>sauber 8 fische</CleanFishBulk.label>
+  <CleanFishBulk.description>Reinigt einen Fisch, um sein Fleisch in verwertbarer Form zu erhalten.</CleanFishBulk.description>
+  <CleanFishBulk.jobString>Schlachtet Kreatur.</CleanFishBulk.jobString>
+</LanguageData>

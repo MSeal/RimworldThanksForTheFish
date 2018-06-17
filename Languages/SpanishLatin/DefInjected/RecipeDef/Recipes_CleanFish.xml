@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CleanFish.label>limpiar un pez</CleanFish.label>
+  <CleanFish.description>Limpia un pez para obtener su carne en forma utilizable.</CleanFish.description>
+  <CleanFish.jobString>Carnicería.</CleanFish.jobString>
+
+  <CleanFishBulk.label>limpiar 8 peces</CleanFishBulk.label>
+  <CleanFishBulk.description>Limpia un pez para obtener su carne en forma utilizable.</CleanFishBulk.description>
+  <CleanFishBulk.jobString>Carnicería.</CleanFishBulk.jobString>
+</LanguageData>
+
