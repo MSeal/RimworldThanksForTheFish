@@ -11,4 +11,10 @@
     <assemblyVersion>0.18.1</assemblyVersion>
     <content>Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".|img:Things/Item/Corpse/Fish_a,Things/Item/Meat/FishMeat|caption:now faster.</content>
   </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_18_2</defName>
+    <assemblyVersion>0.18.2</assemblyVersion>
+    <content>Adjusted fishing to be slightly slower (to match mod description).|Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.</content>
+  </HugsLib.UpdateFeatureDef>
 </Defs>

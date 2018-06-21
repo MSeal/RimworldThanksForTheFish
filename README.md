@@ -60,3 +60,7 @@ Link me translation fixes/additions and I'll add them in.
 #### 0.18.1
 
 > Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".
+
+#### 0.18.2
+
+> Adjusted fishing to be slightly slower (to match mod description). Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.

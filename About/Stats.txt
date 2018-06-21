@@ -1,3 +1,0 @@
-for file in "BattleTech -*"; do mv "$file" "${file/_h.png/_half.png}"; done
-
-rename 's/^BattleTech - //' 'BattleTech - *'

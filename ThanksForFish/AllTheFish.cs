@@ -111,8 +111,37 @@ namespace AllTheFish {
         public static TerrainDef DeepOcean = TerrainDef.Named("WaterOceanDeep");
         public static TerrainDef DeepMoving = TerrainDef.Named("WaterMovingDeep");
 
-        public static bool ShallowWaterTerrain(TerrainDef terrainDef) {
-            return terrainDef == Shallow || terrainDef == ShallowOcean || terrainDef == ShallowMoving;
+        // Add tracking water distances under bridges from RF - Basic Bridges mod
+        public static TerrainDef[] GetAllBridgesWater() {
+          return new TerrainDef[] {
+              DefDatabase<TerrainDef>.GetNamed("BridgeWaterDeep", false),
+              DefDatabase<TerrainDef>.GetNamed("BridgeWaterOceanDeep", false),
+              DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingDeep", false),
+              DefDatabase<TerrainDef>.GetNamed("BridgeWaterShallow", false),
+              DefDatabase<TerrainDef>.GetNamed("BridgeWaterOceanShallow", false),
+              DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingShallow", false),
+              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterDeep", false),
+              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterOceanDeep", false),
+              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingDeep", false),
+              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterShallow", false),
+              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterOceanShallow", false),
+              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingShallow", false),
+              DefDatabase<TerrainDef>.GetNamed("BridgeTKKN_SpringsWater", false)
+          }.Where(t => t != null).ToArray();
+        }
+
+        // Add tracking water distances through new water tiles in Nature's Pretty Sweet mod
+        public static TerrainDef[] GetNaturesPrettySweetWater() {
+            return new TerrainDef[] {
+                DefDatabase<TerrainDef>.GetNamed("TKKN_ColdSpringsWater", false),
+                DefDatabase<TerrainDef>.GetNamed("TKKN_HotSpringsWater", false),
+                DefDatabase<TerrainDef>.GetNamed("TKKN_ColdSprings", false),
+                DefDatabase<TerrainDef>.GetNamed("TKKN_HotSprings", false)
+            }.Where(t => t != null).ToArray();
+        }
+
+        public static TerrainDef[] GetAllWater() {
+            return new TerrainDef[] { Shallow, ShallowOcean, ShallowMoving, Deep, DeepOcean, DeepMoving };
         }
 
         public static bool DeepWaterTerrain(TerrainDef terrainDef) {
@@ -120,7 +149,8 @@ namespace AllTheFish {
         }
 
         public static bool WaterTerrain(TerrainDef terrainDef) {
-            return ShallowWaterTerrain(terrainDef) || DeepWaterTerrain(terrainDef);
+            TerrainDef[] combined = GetAllWater().Concat(GetAllBridgesWater()).Concat(GetNaturesPrettySweetWater()).ToArray();
+            return combined.Contains(terrainDef);
         }
 
         public static IEnumerable<IntVec3> DirectlyConnectedCells(IntVec3 center) {
