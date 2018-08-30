@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationAdd">
-    <xpath>*/RecipeDef[defName = "ButcherCorpseFlesh"]/fixedIngredientFilter/exceptedCategories</xpath>
+    <xpath>*/RecipeDef[defName = "ButcherCorpseFlesh"]/fixedIngredientFilter/disallowedCategories</xpath>
     <value>
       <li>CorpsesFish</li>
     </value>

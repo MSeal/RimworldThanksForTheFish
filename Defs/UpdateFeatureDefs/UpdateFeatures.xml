@@ -7,7 +7,7 @@
   </HugsLib.UpdateFeatureDef>
 
   <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
-    <defName>AllTheFish_0_18_1</defName>
+    <defName>AllTheFish_0_19_0</defName>
     <assemblyVersion>0.18.1</assemblyVersion>
     <content>Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".|img:Things/Item/Corpse/Fish_a,Things/Item/Meat/FishMeat|caption:now faster.</content>
   </HugsLib.UpdateFeatureDef>
@@ -16,5 +16,17 @@
     <defName>AllTheFish_0_18_2</defName>
     <assemblyVersion>0.18.2</assemblyVersion>
     <content>Adjusted fishing to be slightly slower (to match mod description).|Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.</content>
+  </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_18_3</defName>
+    <assemblyVersion>0.18.3</assemblyVersion>
+    <content>Added support for Tribal Essentials and Medieval Times mods' butchering stations.</content>
+  </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_19_0</defName>
+    <assemblyVersion>0.19.0</assemblyVersion>
+    <content>Upgrade to B19!</content>
   </HugsLib.UpdateFeatureDef>
 </Defs>

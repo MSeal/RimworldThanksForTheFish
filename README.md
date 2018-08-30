@@ -1,10 +1,10 @@
 ﻿# RimworldThanksForTheFish
 
-![Version](https://img.shields.io/badge/Rimworld-B18-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1406744458)
+![Version](https://img.shields.io/badge/Rimworld-B19-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1497728159)
 
 ![Alt text](About/Preview.png?raw=true "ThanksForAllTheFish")
 
-[B18] A simple fishing mod designed to provide a food supplement to colonies with access to water.
+[B19] A simple fishing mod designed to provide a food supplement to colonies with access to water.
 
 Adds a fishing sub-skill to Animal Handling which is used at FishingSpots (under the Production Tab) to fulfill fishing bills. Fish are like other animal corpses and can be butchered and cooked, though they do rot a little faster so freeze them within a day or so.
 
@@ -64,3 +64,13 @@ Link me translation fixes/additions and I'll add them in.
 #### 0.18.2
 
 > Adjusted fishing to be slightly slower (to match mod description). Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.
+
+
+#### 0.18.3
+
+> Added support for Tribal Essentials and Medieval Times mods' butchering stations.
+
+
+#### 0.19.0
+
+> Beta 19 support!

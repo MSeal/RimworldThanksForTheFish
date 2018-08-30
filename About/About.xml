@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[B18] Thanks For All The Fish</name>
+    <name>[B19] Thanks For All The Fish</name>
     <author>Pyrce</author>
     <url>https://github.com/MSeal/RimworldThanksForTheFish</url>
-    <targetVersion>0.18.1722</targetVersion>
-    <description>[B18] A simple fishing mod designed to provide a food supplement to colonies with access to water.
+    <targetVersion>0.19.0</targetVersion>
+    <description>[B19] A simple fishing mod designed to provide a food supplement to colonies with access to water.
 
 Adds a fishing sub-skill to Animal Handling which is used at FishingSpots (under the Production Tab) to fulfill fishing bills. Fish are like other animal corpses and can be butchered and cooked, though they do rot a little faster so freeze them within a day or so.
 
@@ -13,8 +13,6 @@ FishingSpots have a few basic restrictions. They must be placed in deep water. Y
 Fishing is sped up by the Animal Handling skill, and has a slow skill gain attached as a benefit for fishing all day.
 
 Requires HugsLib to be installed earlier in the mod load order.
-
-Version: 0.18.1
 
 Current (Sometimes Crude) Translations:
 - English
@@ -76,5 +74,12 @@ CHANGES:
 0.18.2
 
     Adjusted fishing to be slightly slower (to match mod description). Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.
+    
+0.18.3
+
+    Added support for Tribal Essentials and Medieval Times mods' butchering stations.
+    
+0.19.0
+    Beta 19 support!
     </description>
 </ModMetaData>

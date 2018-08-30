@@ -22,14 +22,33 @@ namespace AllTheFish {
         public DolphinAway dolphinLeaving;
         public static TerrainDef Deep = TerrainDef.Named("WaterDeep");
         public static TerrainDef DeepOcean = TerrainDef.Named("WaterOceanDeep");
-        public static TerrainDef DeepMoving = TerrainDef.Named("WaterMovingDeep");
+        public static TerrainDef DeepMoving = TerrainDef.Named("WaterMovingChestDeep");
         private static IntVec3 NoWhere = new IntVec3(-1, -1, -1);
 
         public override string ModIdentifier {
             get { return "AllTheFish"; }
         }
 
+        protected void InjectModSupports() {
+            RecipeDef CleanFish = DefDatabase<RecipeDef>.GetNamed("CleanFish", true);
+            RecipeDef CleanFishBulk = DefDatabase<RecipeDef>.GetNamed("CleanFishBulk", true);
+            ThingDef ButcheringSpot = DefDatabase<ThingDef>.GetNamed("ButcheringSpot", false);
+            ThingDef ButcherBlock = DefDatabase<ThingDef>.GetNamed("MedTimes_ButcherBlock", false);
+
+            // Support for Tribal Essentials
+            if (ButcheringSpot != null) {
+                CleanFish.recipeUsers.Add(ButcheringSpot);
+                CleanFishBulk.recipeUsers.Add(ButcheringSpot);
+            }
+            // Support for Medieval Times
+            if (ButcherBlock != null) {
+                CleanFish.recipeUsers.Add(ButcherBlock);
+                CleanFishBulk.recipeUsers.Add(ButcherBlock);
+            }
+        }
+
         public override void MapLoaded(Map map) {
+            InjectModSupports();
             base.MapLoaded(map);
             Logger.Message("MapLoaded: Adding Dolphin to some deep water");
             IntVec3 launchPoint = randomWater(map);
@@ -109,20 +128,23 @@ namespace AllTheFish {
         public static TerrainDef ShallowMoving = TerrainDef.Named("WaterMovingShallow");
         public static TerrainDef Deep = TerrainDef.Named("WaterDeep");
         public static TerrainDef DeepOcean = TerrainDef.Named("WaterOceanDeep");
-        public static TerrainDef DeepMoving = TerrainDef.Named("WaterMovingDeep");
+        public static TerrainDef DeepMoving = TerrainDef.Named("WaterMovingChestDeep");
 
         // Add tracking water distances under bridges from RF - Basic Bridges mod
         public static TerrainDef[] GetAllBridgesWater() {
           return new TerrainDef[] {
+              DefDatabase<TerrainDef>.GetNamed("Bridge", false),
               DefDatabase<TerrainDef>.GetNamed("BridgeWaterDeep", false),
               DefDatabase<TerrainDef>.GetNamed("BridgeWaterOceanDeep", false),
               DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingDeep", false),
+              DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingChestDeep", false),
               DefDatabase<TerrainDef>.GetNamed("BridgeWaterShallow", false),
               DefDatabase<TerrainDef>.GetNamed("BridgeWaterOceanShallow", false),
               DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingShallow", false),
               DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterDeep", false),
               DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterOceanDeep", false),
               DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingDeep", false),
+              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingChestDeep", false),
               DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterShallow", false),
               DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterOceanShallow", false),
               DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingShallow", false),
@@ -334,8 +356,4 @@ namespace AllTheFish {
             }
         }
     }
-
-  public class ButcherCorpseFlesh : RecipeDef {
-
-  }
 }

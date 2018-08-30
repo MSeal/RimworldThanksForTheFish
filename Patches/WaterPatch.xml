@@ -1,5 +1,5 @@
 <Patch>
-    <!-- Using a patch fix for water definitions from the Basic Bridges mod (license allows) -->
+    <!-- [Modified for B19] Using a patch fix for water definitions from the Basic Bridges mod (license allows) -->
 
     <!-- Water Tiles -->
 
@@ -31,7 +31,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>*/TerrainDef[defName = "WaterDeep"]/affordances</xpath>
         <value>
-            <li>Undefined</li>
+            <li>Water</li>
         </value>
     </Operation>
 
@@ -39,7 +39,7 @@
         <success>Always</success>
         <operations>
             <li Class="PatchOperationRemove">
-                <xpath>*/TerrainDef[defName = "WaterMovingDeep"]/changeable</xpath>
+                <xpath>*/TerrainDef[defName = "WaterMovingChestDeep"]/changeable</xpath>
             </li>
         </operations>
     </Operation>
@@ -48,11 +48,11 @@
         <success>Always</success>
         <operations>
             <li Class="PatchOperationTest">
-                <xpath>*/TerrainDef[defName = "WaterMovingDeep"]/affordances</xpath>
+                <xpath>*/TerrainDef[defName = "WaterMovingChestDeep"]/affordances</xpath>
                 <success>Invert</success>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>*/TerrainDef[defName = "WaterMovingDeep"]</xpath>
+                <xpath>*/TerrainDef[defName = "WaterMovingChestDeep"]</xpath>
                 <value>
                     <affordances/>
                 </value>
@@ -61,9 +61,9 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>*/TerrainDef[defName = "WaterMovingDeep"]/affordances</xpath>
+        <xpath>*/TerrainDef[defName = "WaterMovingChestDeep"]/affordances</xpath>
         <value>
-            <li>Undefined</li>
+            <li>Water</li>
         </value>
     </Operation>
 
@@ -95,7 +95,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>*/TerrainDef[defName = "WaterOceanDeep"]/affordances</xpath>
         <value>
-            <li>Undefined</li>
+            <li>Water</li>
         </value>
     </Operation>
 
@@ -127,7 +127,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>*/TerrainDef[defName = "WaterShallow"]/affordances</xpath>
         <value>
-            <li>Undefined</li>
+            <li>Water</li>
         </value>
     </Operation>
 
@@ -159,7 +159,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>*/TerrainDef[defName = "WaterMovingShallow"]/affordances</xpath>
         <value>
-            <li>Undefined</li>
+            <li>Water</li>
         </value>
     </Operation>
 
@@ -191,7 +191,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>*/TerrainDef[defName = "WaterOceanShallow"]/affordances</xpath>
         <value>
-            <li>Undefined</li>
+            <li>Water</li>
         </value>
     </Operation>
 </Patch>

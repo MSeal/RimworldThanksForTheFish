@@ -27,7 +27,9 @@
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Beauty>-4</Beauty>
+      <Nutrition>0.2</Nutrition>
       <DeteriorationRate>10</DeteriorationRate>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
     </statBases>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
@@ -35,16 +37,12 @@
         <daysToRotStart>2</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
-      <li Class="CompProperties_FoodPoisoningChance">
-        <humanlikeOnly>true</humanlikeOnly>
-      </li>
     </comps>
     <tickerType>Normal</tickerType>
     <drawGUIOverlay>true</drawGUIOverlay>
     <ingestible>
       <foodType>Meat</foodType>
       <preferability>RawBad</preferability>
-      <nutrition>0.2</nutrition>
       <ingestEffect>EatMeat</ingestEffect>
       <ingestSound>RawMeat_Eat</ingestSound>
       <tasteThought>AteRawFood</tasteThought>
@@ -73,15 +71,14 @@
       <Mass>0.045</Mass>
       <MaxHitPoints>60</MaxHitPoints>
       <Beauty>-4</Beauty>
+      <Nutrition>0.05</Nutrition>
       <DeteriorationRate>10</DeteriorationRate>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>2</daysToRotStart>
         <rotDestroys>true</rotDestroys>
-      </li>
-      <li Class="CompProperties_FoodPoisoningChance">
-        <humanlikeOnly>true</humanlikeOnly>
       </li>
     </comps>
     <tickerType>Normal</tickerType>
@@ -89,7 +86,6 @@
     <ingestible>
       <foodType>Meat</foodType>
       <preferability>RawBad</preferability>
-      <nutrition>0.05</nutrition>
       <ingestEffect>EatMeat</ingestEffect>
       <ingestSound>RawMeat_Eat</ingestSound>
       <tasteThought>AteRawFood</tasteThought>

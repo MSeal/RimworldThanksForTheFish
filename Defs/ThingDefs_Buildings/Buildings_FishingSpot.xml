@@ -41,6 +41,6 @@
       <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
       <ai_chillDestination>false</ai_chillDestination>
     </building>
-    <terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Water</terrainAffordanceNeeded>
   </ThingDef>
 </Defs>

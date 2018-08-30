@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Supports water tile assignments -->
+  <TerrainAffordanceDef>
+    <defName>Water</defName>
+    <label>water</label>
+    <order>4000</order>
+  </TerrainAffordanceDef>
+
+</Defs>
