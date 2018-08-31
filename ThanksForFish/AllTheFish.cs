@@ -32,6 +32,7 @@ namespace AllTheFish {
         protected void InjectModSupports() {
             RecipeDef CleanFish = DefDatabase<RecipeDef>.GetNamed("CleanFish", true);
             RecipeDef CleanFishBulk = DefDatabase<RecipeDef>.GetNamed("CleanFishBulk", true);
+            // Just in-case tribal essentials reuses this name 
             ThingDef ButcheringSpot = DefDatabase<ThingDef>.GetNamed("ButcheringSpot", false);
             ThingDef ButcherBlock = DefDatabase<ThingDef>.GetNamed("MedTimes_ButcherBlock", false);
 

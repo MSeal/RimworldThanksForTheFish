@@ -29,4 +29,10 @@
     <assemblyVersion>0.19.0</assemblyVersion>
     <content>Upgrade to B19!</content>
   </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_19_1</defName>
+    <assemblyVersion>0.19.1</assemblyVersion>
+    <content>New butcher spot |img:Things/Building/Production/ButcherSpot| can now clean fish.</content>
+  </HugsLib.UpdateFeatureDef>
 </Defs>

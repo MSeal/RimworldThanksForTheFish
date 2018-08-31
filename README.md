@@ -74,3 +74,7 @@ Link me translation fixes/additions and I'll add them in.
 #### 0.19.0
 
 > Beta 19 support!
+
+#### 0.19.1
+
+> New butcher spot can now clean fish.

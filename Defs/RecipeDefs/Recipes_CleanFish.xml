@@ -3,6 +3,7 @@
   <RecipeDef Abstract="true" Name="CleanFishBase">
     <recipeUsers>
       <li>TableButcher</li>
+      <li>ButcherSpot</li>
     </recipeUsers>
     <label>clean fish</label>
     <description>Cleans a fish to obtain its meat in usable form.</description>
