@@ -35,4 +35,10 @@
     <assemblyVersion>0.19.1</assemblyVersion>
     <content>New butcher spot |img:Things/Building/Production/ButcherSpot| can now clean fish.</content>
   </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_19_2</defName>
+    <assemblyVersion>0.19.2</assemblyVersion>
+    <content>Added audio support for Mac / Linux.</content>
+  </HugsLib.UpdateFeatureDef>
 </Defs>

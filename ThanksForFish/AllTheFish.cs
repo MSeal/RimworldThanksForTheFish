@@ -257,7 +257,7 @@ namespace AllTheFish {
 
     public class WorkGiver_CatchFish : WorkGiver_DoBill {
         // Thanks for making the more advanced version of this private... :/
-        protected bool ThingIsUsableBillGiver(Thing thing) {
+        public new bool ThingIsUsableBillGiver(Thing thing) {
             Pawn pawn = thing as Pawn;
             if (this.def.fixedBillGiverDefs != null && this.def.fixedBillGiverDefs.Contains(thing.def)) {
                 return true;

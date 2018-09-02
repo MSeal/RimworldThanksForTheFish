@@ -78,3 +78,7 @@ Link me translation fixes/additions and I'll add them in.
 #### 0.19.1
 
 > New butcher spot can now clean fish.
+
+#### 0.19.2
+
+> Added audio support for Mac / Linux.
