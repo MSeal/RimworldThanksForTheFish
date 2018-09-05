@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CleanFish.label>处理一条鱼</CleanFish.label>
+  <CleanFish.description>处理鱼以获得可使用的肉。</CleanFish.description>
+  <CleanFish.jobString>处理鱼。</CleanFish.jobString>
+
+  <CleanFishBulk.label>处理八条鱼</CleanFishBulk.label>
+  <CleanFishBulk.description>处理鱼以获得可使用的肉。</CleanFishBulk.description>
+  <CleanFishBulk.jobString>处理鱼。</CleanFishBulk.jobString>
+</LanguageData>

@@ -18,6 +18,7 @@ Requires HugsLib to be installed earlier in the mod load order.
 - English
 - French
 - German
+- Chinese (Simplified)
 - Japanese
 - Polish
 - Portuguese
