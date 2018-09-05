@@ -8,4 +8,6 @@
   <AllTheFish.MinFishingRadiusSettingDescription>Устанавливает минимальное расстояние между местами рыбалки</AllTheFish.MinFishingRadiusSettingDescription>
   <AllTheFish.MinFishingSizeSetting>Минимальный размер бассейна для рыбалки</AllTheFish.MinFishingSizeSetting>
   <AllTheFish.MinFishingSizeSettingDescription>Устанавливает минимальное количество плиток для воды, необходимых для рыбалки</AllTheFish.MinFishingSizeSettingDescription>
+  <AllTheFish.FishingWorkCostSetting>Стоимость рыбалки</AllTheFish.FishingWorkCostSetting>
+  <AllTheFish.FishingWorkCostSettingDescription>Стоимость работника для ловли одной рыбы из воды</AllTheFish.FishingWorkCostSettingDescription>
 </LanguageData>

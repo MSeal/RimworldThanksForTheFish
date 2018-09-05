@@ -8,4 +8,6 @@
   <AllTheFish.MinFishingRadiusSettingDescription>Ustawia minimalną odległość między punktami połowów</AllTheFish.MinFishingRadiusSettingDescription>
   <AllTheFish.MinFishingSizeSetting>Minimalny rozmiar basenu rybackiego</AllTheFish.MinFishingSizeSetting>
   <AllTheFish.MinFishingSizeSettingDescription>Ustawia minimalną liczbę wymaganych kafli, aby móc łowić ryby</AllTheFish.MinFishingSizeSettingDescription>
+  <AllTheFish.FishingWorkCostSetting>Koszty pracy rybackiej</AllTheFish.FishingWorkCostSetting>
+  <AllTheFish.FishingWorkCostSettingDescription>Koszt robotnika za łowienie pojedynczej ryby z wody</AllTheFish.FishingWorkCostSettingDescription>
 </LanguageData>

@@ -8,4 +8,6 @@
   <AllTheFish.MinFishingRadiusSettingDescription>Définit la distance minimale entre les lieux de pêche</AllTheFish.MinFishingRadiusSettingDescription>
   <AllTheFish.MinFishingSizeSetting>Taille minimale de la piscine de pêche</AllTheFish.MinFishingSizeSetting>
   <AllTheFish.MinFishingSizeSettingDescription>Définit le nombre minimum de tuiles d'eau nécessaires pour pouvoir pêcher</AllTheFish.MinFishingSizeSettingDescription>
+  <AllTheFish.FishingWorkCostSetting>Coût des travaux de pêche</AllTheFish.FishingWorkCostSetting>
+  <AllTheFish.FishingWorkCostSettingDescription>Le coût de la pêche d'un seul poisson hors de l'eau</AllTheFish.FishingWorkCostSettingDescription>
 </LanguageData>

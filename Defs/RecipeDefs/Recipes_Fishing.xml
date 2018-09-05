@@ -6,6 +6,7 @@
     <label>catch fish</label>
     <description>Hooks some worms and snatch some fish.</description>
     <jobString>Fishing.</jobString>
+    <!-- Overwritten by mod loader: See fishingWorkCost -->
     <workAmount>1350</workAmount>
     <workSpeedStat>FishSpeed</workSpeedStat>
     <soundWorking>FishReel</soundWorking>

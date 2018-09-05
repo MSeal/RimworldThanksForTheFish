@@ -32,9 +32,11 @@ namespace AllTheFish {
         
         const int DEFAULT_MIN_FISHING_RADIUS = 10;
         const int DEFAULT_MIN_FISHING_SIZE = 5;
+        const int DEFAULT_FISHING_WORK_COST = 1350;
 
         public static SettingHandle<int> minFishingRadius;
         public static SettingHandle<int> minFishingSize;
+        public static SettingHandle<int> fishingWorkCost;
 
         public static int MIN_FISHING_RADIUS = 10;
         public static int MIN_FISHING_SIZE = 5;
@@ -53,6 +55,21 @@ namespace AllTheFish {
                "AllTheFish.MinFishingSizeSettingDescription".Translate(),
                DEFAULT_MIN_FISHING_SIZE,
                Validators.IntRangeValidator(0, 255 * 255));
+
+            fishingWorkCost = Settings.GetHandle<int>(
+               "fishingWorkCost",
+               "AllTheFish.FishingWorkCostSetting".Translate(),
+               "AllTheFish.FishingWorkCostSettingDescription".Translate(),
+               DEFAULT_FISHING_WORK_COST,
+               Validators.IntRangeValidator(1, 32767));
+            fishingWorkCost.OnValueChanged = newValue => { ApplyFishingCostSetting(); };
+        }
+
+        public void ApplyFishingCostSetting() {
+            RecipeDef fishing = DefDatabase<RecipeDef>.GetNamed("CatchFish", true);
+            fishing.workAmount = fishingWorkCost;
+
+            Logger.Message(String.Format("Set fishingWorkCost: {0}", fishing.workAmount));
         }
 
         protected void InjectModSupports()
@@ -85,7 +102,7 @@ namespace AllTheFish {
         public override void MapLoaded(Map map) {
             base.MapLoaded(map);
             Logger.Message("MapLoaded: Adding Dolphin to some deep water");
-            IntVec3 launchPoint = randomWater(map);
+            IntVec3 launchPoint = RandomWater(map);
             if (!launchPoint.Equals(NoWhere))
             {
                 Logger.Message("Humans are here... so long and thanks for all the fish @: " + launchPoint);
@@ -113,7 +130,7 @@ namespace AllTheFish {
             return terrainDef == Deep || terrainDef == DeepOcean || terrainDef == DeepMoving;
         }
 
-        public HashSet<IntVec3> allDeepWater(Map map) {
+        public HashSet<IntVec3> AllDeepWater(Map map) {
             HashSet<IntVec3> water = new HashSet<IntVec3>();
             foreach (var cell in map.AllCells) {
                 if (DeepWaterTerrain(map.terrainGrid.TerrainAt(cell))) {
@@ -123,9 +140,9 @@ namespace AllTheFish {
             return water;
         }
 
-        public IntVec3 randomWater(Map map) {
+        public IntVec3 RandomWater(Map map) {
             System.Random randomizer = new System.Random();
-            HashSet<IntVec3> water = allDeepWater(map);
+            HashSet<IntVec3> water = AllDeepWater(map);
             if (water.Count == 0) {
                 return NoWhere;
             } else {

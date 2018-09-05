@@ -8,4 +8,6 @@
   <AllTheFish.MinFishingRadiusSettingDescription>釣りスポット間の最小距離を設定します</AllTheFish.MinFishingRadiusSettingDescription>
   <AllTheFish.MinFishingSizeSetting>最低釣プールサイズ</AllTheFish.MinFishingSizeSetting>
   <AllTheFish.MinFishingSizeSettingDescription>魚を釣るために必要なウォータータイルの最小数を設定します</AllTheFish.MinFishingSizeSettingDescription>
+  <AllTheFish.FishingWorkCostSetting>釣り作業コスト</AllTheFish.FishingWorkCostSetting>
+  <AllTheFish.FishingWorkCostSettingDescription>水から単一の魚を釣るための労働者のコスト</AllTheFish.FishingWorkCostSettingDescription>
 </LanguageData>

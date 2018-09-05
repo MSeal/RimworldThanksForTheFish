@@ -8,4 +8,6 @@
   <AllTheFish.MinFishingRadiusSettingDescription>Legt den Mindestabstand zwischen Angelplätzen fest</AllTheFish.MinFishingRadiusSettingDescription>
   <AllTheFish.MinFishingSizeSetting>Mindestfischen Poolgröße</AllTheFish.MinFishingSizeSetting>
   <AllTheFish.MinFishingSizeSettingDescription>Legt die Mindestanzahl von Wasserfliesen fest, die benötigt werden, um fischen zu können</AllTheFish.MinFishingSizeSettingDescription>
+  <AllTheFish.FishingWorkCostSetting>Angelarbeit Kosten</AllTheFish.FishingWorkCostSetting>
+  <AllTheFish.FishingWorkCostSettingDescription>Arbeitskraftkosten für das Fischen eines einzelnen Fisches aus dem Wasser heraus</AllTheFish.FishingWorkCostSettingDescription>
 </LanguageData>

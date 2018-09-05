@@ -8,4 +8,6 @@
   <AllTheFish.MinFishingRadiusSettingDescription>Establece la distancia mínima entre los puntos de pesca</AllTheFish.MinFishingRadiusSettingDescription>
   <AllTheFish.MinFishingSizeSetting>Tamaño mínimo de la piscina de pesca</AllTheFish.MinFishingSizeSetting>
   <AllTheFish.MinFishingSizeSettingDescription>Establece la cantidad mínima de baldosas de agua requeridas para poder pescar</AllTheFish.MinFishingSizeSettingDescription>
+  <AllTheFish.FishingWorkCostSetting>Costo del trabajo de pesca</AllTheFish.FishingWorkCostSetting>
+  <AllTheFish.FishingWorkCostSettingDescription>Costo del trabajador por pescar un solo pez fuera del agua</AllTheFish.FishingWorkCostSettingDescription>
 </LanguageData>

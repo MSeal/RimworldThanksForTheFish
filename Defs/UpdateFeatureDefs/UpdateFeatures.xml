@@ -41,4 +41,10 @@
     <assemblyVersion>0.19.2</assemblyVersion>
     <content>Added audio support for Mac / Linux.</content>
   </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_19_3</defName>
+    <assemblyVersion>0.19.3</assemblyVersion>
+    <content>Added configuration of |img:Things/Building/Production/FishingSpot|fishing spot min distances, and |img:Mote/FishingRod/RodEast|fishing work cost to mod settings.\n\nEdit these under Options -> Mod Settings.</content>
+  </HugsLib.UpdateFeatureDef>
 </Defs>

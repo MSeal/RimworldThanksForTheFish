@@ -8,4 +8,6 @@
   <AllTheFish.MinFishingRadiusSettingDescription>Sets the minimum distance between fishing spots</AllTheFish.MinFishingRadiusSettingDescription>
   <AllTheFish.MinFishingSizeSetting>Minimum Fishing Pool Size</AllTheFish.MinFishingSizeSetting>
   <AllTheFish.MinFishingSizeSettingDescription>Sets the minimum number of water tiles required to be able to fish</AllTheFish.MinFishingSizeSettingDescription>
+  <AllTheFish.FishingWorkCostSetting>Fishing Work Cost</AllTheFish.FishingWorkCostSetting>
+  <AllTheFish.FishingWorkCostSettingDescription>Worker cost for fishing a single fish out of the water</AllTheFish.FishingWorkCostSettingDescription>
 </LanguageData>

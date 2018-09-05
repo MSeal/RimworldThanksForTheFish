@@ -8,4 +8,6 @@
   <AllTheFish.MinFishingRadiusSettingDescription>낚시터 사이의 최소 거리를 설정합니다</AllTheFish.MinFishingRadiusSettingDescription>
   <AllTheFish.MinFishingSizeSetting>최소 낚시 풀 크기</AllTheFish.MinFishingSizeSetting>
   <AllTheFish.MinFishingSizeSettingDescription>물고기를 잡을 수 있도록 필요한 물 타일의 최소 수를 설정합니다</AllTheFish.MinFishingSizeSettingDescription>
+  <AllTheFish.FishingWorkCostSetting>낚시 작업 비용</AllTheFish.FishingWorkCostSetting>
+  <AllTheFish.FishingWorkCostSettingDescription>물에서 하나의 물고기를 낚시에 대한 노동자 비용</AllTheFish.FishingWorkCostSettingDescription>
 </LanguageData>
