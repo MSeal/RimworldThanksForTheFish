@@ -20,7 +20,7 @@
     </placeWorkers>
     <tickerType>Rare</tickerType>
     <scatterableOnMapGen>false</scatterableOnMapGen>
-    <useHitPoints>False</useHitPoints>
+    <useHitPoints>false</useHitPoints>
     <size>(1,1)</size>
     <designationCategory>Production</designationCategory>
     <passability>Standable</passability>
