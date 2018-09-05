@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <LanguageData>
-    <AllTheFish.DeepWaterFishing>Must be placed over deep water</AllTheFish.DeepWaterFishing>
-    <AllTheFish.CloseFishing>Cannot be placed so close to another fishing spot</AllTheFish.CloseFishing>
-    <AllTheFish.TooSmallFishing>Must be placed in a larger water source</AllTheFish.TooSmallFishing>
+  <AllTheFish.DeepWaterFishing>Must be placed over deep water</AllTheFish.DeepWaterFishing>
+  <AllTheFish.CloseFishing>Cannot be placed so close to another fishing spot</AllTheFish.CloseFishing>
+  <AllTheFish.TooSmallFishing>Must be placed in a larger water source</AllTheFish.TooSmallFishing>
+  <AllTheFish.MinFishingRadiusSetting>Minimum Fishing Distance</AllTheFish.MinFishingRadiusSetting>
+  <AllTheFish.MinFishingRadiusSettingDescription>Sets the minimum distance between fishing spots</AllTheFish.MinFishingRadiusSettingDescription>
+  <AllTheFish.MinFishingSizeSetting>Minimum Fishing Pool Size</AllTheFish.MinFishingSizeSetting>
+  <AllTheFish.MinFishingSizeSettingDescription>Sets the minimum number of water tiles required to be able to fish</AllTheFish.MinFishingSizeSettingDescription>
 </LanguageData>

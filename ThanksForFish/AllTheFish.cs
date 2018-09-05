@@ -6,6 +6,7 @@ using Verse;
 using Verse.AI;
 using UnityEngine;
 using HugsLib;
+using HugsLib.Settings;
 
 namespace AllTheFish {
     static class Extensions {
@@ -18,7 +19,7 @@ namespace AllTheFish {
         }
     }
 
-    public class Mod : ModBase {
+    public class AllTheFishLoader : ModBase {
         public DolphinAway dolphinLeaving;
         public static TerrainDef Deep = TerrainDef.Named("WaterDeep");
         public static TerrainDef DeepOcean = TerrainDef.Named("WaterOceanDeep");
@@ -28,8 +29,34 @@ namespace AllTheFish {
         public override string ModIdentifier {
             get { return "AllTheFish"; }
         }
+        
+        const int DEFAULT_MIN_FISHING_RADIUS = 10;
+        const int DEFAULT_MIN_FISHING_SIZE = 5;
 
-        protected void InjectModSupports() {
+        public static SettingHandle<int> minFishingRadius;
+        public static SettingHandle<int> minFishingSize;
+
+        public static int MIN_FISHING_RADIUS = 10;
+        public static int MIN_FISHING_SIZE = 5;
+
+        protected void LoadHandles() {
+            minFishingRadius = Settings.GetHandle<int>(
+              "minFishingRadius",
+              "AllTheFish.MinFishingRadiusSetting".Translate(),
+              "AllTheFish.MinFishingRadiusSettingDescription".Translate(),
+              DEFAULT_MIN_FISHING_RADIUS,
+              Validators.IntRangeValidator(0, 255 * 255));
+
+            minFishingSize = Settings.GetHandle<int>(
+               "minFishingSize",
+               "AllTheFish.MinFishingSizeSetting".Translate(),
+               "AllTheFish.MinFishingSizeSettingDescription".Translate(),
+               DEFAULT_MIN_FISHING_SIZE,
+               Validators.IntRangeValidator(0, 255 * 255));
+        }
+
+        protected void InjectModSupports()
+        {
             RecipeDef CleanFish = DefDatabase<RecipeDef>.GetNamed("CleanFish", true);
             RecipeDef CleanFishBulk = DefDatabase<RecipeDef>.GetNamed("CleanFishBulk", true);
             // Just in-case tribal essentials reuses this name 
@@ -37,23 +64,29 @@ namespace AllTheFish {
             ThingDef ButcherBlock = DefDatabase<ThingDef>.GetNamed("MedTimes_ButcherBlock", false);
 
             // Support for Tribal Essentials
-            if (ButcheringSpot != null) {
+            if (ButcheringSpot != null)
+            {
                 CleanFish.recipeUsers.Add(ButcheringSpot);
                 CleanFishBulk.recipeUsers.Add(ButcheringSpot);
             }
             // Support for Medieval Times
-            if (ButcherBlock != null) {
+            if (ButcherBlock != null)
+            {
                 CleanFish.recipeUsers.Add(ButcherBlock);
                 CleanFishBulk.recipeUsers.Add(ButcherBlock);
             }
         }
 
-        public override void MapLoaded(Map map) {
+        public override void DefsLoaded() {
+            LoadHandles();
             InjectModSupports();
+        }
+
+        public override void MapLoaded(Map map) {
             base.MapLoaded(map);
             Logger.Message("MapLoaded: Adding Dolphin to some deep water");
             IntVec3 launchPoint = randomWater(map);
-            if (launchPoint != NoWhere)
+            if (!launchPoint.Equals(NoWhere))
             {
                 Logger.Message("Humans are here... so long and thanks for all the fish @: " + launchPoint);
                 DolphinAway dolphin = (DolphinAway)ThingMaker.MakeThing(ThingDef.Named("DolphinAway"), null);
@@ -122,8 +155,6 @@ namespace AllTheFish {
     }
 
     public class PlaceWorker_DeepWaterFishing : PlaceWorker {
-        public static int MIN_FISHING_RADIUS = 10;
-        public static int MIN_FISHING_SIZE = 5;
         public static TerrainDef Shallow = TerrainDef.Named("WaterShallow");
         public static TerrainDef ShallowOcean = TerrainDef.Named("WaterOceanShallow");
         public static TerrainDef ShallowMoving = TerrainDef.Named("WaterMovingShallow");
@@ -245,10 +276,10 @@ namespace AllTheFish {
             if (!DeepWaterTerrain(map.terrainGrid.TerrainAt(loc))) {
                 return new AcceptanceReport("AllTheFish.DeepWaterFishing".Translate());
             }
-            if (!FishingSpotMinSize(loc, MIN_FISHING_SIZE, map)) {
+            if (!FishingSpotMinSize(loc, AllTheFishLoader.minFishingSize, map)) {
                 return new AcceptanceReport("AllTheFish.TooSmallFishing".Translate());
             }
-            if (!FishingSpotConnectedByWater(loc, MIN_FISHING_RADIUS, map)) {
+            if (!FishingSpotConnectedByWater(loc, AllTheFishLoader.minFishingRadius, map)) {
                 return new AcceptanceReport("AllTheFish.CloseFishing".Translate());
             }
             return true;

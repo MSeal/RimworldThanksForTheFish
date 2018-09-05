@@ -4,4 +4,8 @@
   <AllTheFish.DeepWaterFishing>深い水の上に置かなければならない</AllTheFish.DeepWaterFishing>
   <AllTheFish.CloseFishing>別の釣り場に近づけられない</AllTheFish.CloseFishing>
   <AllTheFish.TooSmallFishing>より大きな水源に置かなければならない</AllTheFish.TooSmallFishing>
+  <AllTheFish.MinFishingRadiusSetting>最低釣り距離</AllTheFish.MinFishingRadiusSetting>
+  <AllTheFish.MinFishingRadiusSettingDescription>釣りスポット間の最小距離を設定します</AllTheFish.MinFishingRadiusSettingDescription>
+  <AllTheFish.MinFishingSizeSetting>最低釣プールサイズ</AllTheFish.MinFishingSizeSetting>
+  <AllTheFish.MinFishingSizeSettingDescription>魚を釣るために必要なウォータータイルの最小数を設定します</AllTheFish.MinFishingSizeSettingDescription>
 </LanguageData>

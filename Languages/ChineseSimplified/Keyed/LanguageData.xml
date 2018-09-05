@@ -4,4 +4,6 @@
   <AllTheFish.DeepWaterFishing>必须放在深水上</AllTheFish.DeepWaterFishing>
   <AllTheFish.CloseFishing>不能靠近另一个钓鱼地点</AllTheFish.CloseFishing>
   <AllTheFish.TooSmallFishing>必须放在大片水源上</AllTheFish.TooSmallFishing>
+  <AllTheFish.MinFishingRadiusSetting>设置钓点之间的最小距离</AllTheFish.MinFishingRadiusSetting>
+  <AllTheFish.MinFishingSizeSetting>设置能够捕鱼所需的最小水瓦数</AllTheFish.MinFishingSizeSetting>
 </LanguageData>

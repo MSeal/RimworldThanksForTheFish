@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CleanFish.label>깨끗한 물고기</CleanFish.label>
+  <CleanFish.description>사용 가능한 형태로 고기를 얻기 위해 생선을 청소합니다.</CleanFish.description>
+  <CleanFish.jobString>청소.</CleanFish.jobString>
+
+  <CleanFishBulk.label>깨끗한 8 물고기</CleanFishBulk.label>
+  <CleanFishBulk.description>사용 가능한 형태로 고기를 얻기 위해 8 마리의 물고기를 청소합니다.</CleanFishBulk.description>
+  <CleanFishBulk.jobString>청소.</CleanFishBulk.jobString>
+</LanguageData>

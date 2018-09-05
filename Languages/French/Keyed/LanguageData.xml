@@ -4,4 +4,8 @@
   <AllTheFish.DeepWaterFishing>Doit être placé au-dessus de l'eau profonde</AllTheFish.DeepWaterFishing>
   <AllTheFish.CloseFishing>Ne peut pas être placé si près d'un autre lieu de pêche</AllTheFish.CloseFishing>
   <AllTheFish.TooSmallFishing>Doit être placé dans une plus grande source d'eau</AllTheFish.TooSmallFishing>
+  <AllTheFish.MinFishingRadiusSetting>Distance minimale de pêche</AllTheFish.MinFishingRadiusSetting>
+  <AllTheFish.MinFishingRadiusSettingDescription>Définit la distance minimale entre les lieux de pêche</AllTheFish.MinFishingRadiusSettingDescription>
+  <AllTheFish.MinFishingSizeSetting>Taille minimale de la piscine de pêche</AllTheFish.MinFishingSizeSetting>
+  <AllTheFish.MinFishingSizeSettingDescription>Définit le nombre minimum de tuiles d'eau nécessaires pour pouvoir pêcher</AllTheFish.MinFishingSizeSettingDescription>
 </LanguageData>

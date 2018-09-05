@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+  <AllTheFish.DeepWaterFishing>깊은 물 위에 놓아야합니다.</AllTheFish.DeepWaterFishing>
+  <AllTheFish.CloseFishing>다른 어업 지점과 너무 가깝게 배치 할 수 없습니다</AllTheFish.CloseFishing>
+  <AllTheFish.TooSmallFishing>더 큰 수원에 설치해야합니다.</AllTheFish.TooSmallFishing>
+  <AllTheFish.MinFishingRadiusSetting>최소 낚시 거리</AllTheFish.MinFishingRadiusSetting>
+  <AllTheFish.MinFishingRadiusSettingDescription>낚시터 사이의 최소 거리를 설정합니다</AllTheFish.MinFishingRadiusSettingDescription>
+  <AllTheFish.MinFishingSizeSetting>최소 낚시 풀 크기</AllTheFish.MinFishingSizeSetting>
+  <AllTheFish.MinFishingSizeSettingDescription>물고기를 잡을 수 있도록 필요한 물 타일의 최소 수를 설정합니다</AllTheFish.MinFishingSizeSettingDescription>
+</LanguageData>

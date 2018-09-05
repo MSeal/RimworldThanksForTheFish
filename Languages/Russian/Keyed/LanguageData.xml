@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <LanguageData>
-    <AllTheFish.DeepWaterFishing>Должен быть помещен на глубокую воду</AllTheFish.DeepWaterFishing>
-    <AllTheFish.CloseFishing>Нельзя размещать так близко к другому месту промысла</AllTheFish.CloseFishing>
-    <AllTheFish.TooSmallFishing>Должен быть помещен в больший источник воды</AllTheFish.TooSmallFishing>
+  <AllTheFish.DeepWaterFishing>Должен быть помещен на глубокую воду</AllTheFish.DeepWaterFishing>
+  <AllTheFish.CloseFishing>Нельзя размещать так близко к другому месту промысла</AllTheFish.CloseFishing>
+  <AllTheFish.TooSmallFishing>Должен быть помещен в больший источник воды</AllTheFish.TooSmallFishing>
+  <AllTheFish.MinFishingRadiusSetting>Минимальная дистанция рыбалки</AllTheFish.MinFishingRadiusSetting>
+  <AllTheFish.MinFishingRadiusSettingDescription>Устанавливает минимальное расстояние между местами рыбалки</AllTheFish.MinFishingRadiusSettingDescription>
+  <AllTheFish.MinFishingSizeSetting>Минимальный размер бассейна для рыбалки</AllTheFish.MinFishingSizeSetting>
+  <AllTheFish.MinFishingSizeSettingDescription>Устанавливает минимальное количество плиток для воды, необходимых для рыбалки</AllTheFish.MinFishingSizeSettingDescription>
 </LanguageData>
