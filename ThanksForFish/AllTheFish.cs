@@ -96,6 +96,7 @@ namespace AllTheFish {
 
         public override void DefsLoaded() {
             LoadHandles();
+            ApplyFishingCostSetting();
             InjectModSupports();
         }
 
