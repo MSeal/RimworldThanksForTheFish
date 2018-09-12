@@ -4,7 +4,9 @@
     <author>Pyrce</author>
     <url>https://github.com/MSeal/RimworldThanksForTheFish</url>
     <targetVersion>0.19.2009</targetVersion>
-    <description>[B19] A simple fishing mod designed to provide a food supplement to colonies with access to water.
+    <description>[h1][B19] Thanks For All The Fish[/h1]
+    
+A simple fishing mod designed to provide a food supplement to colonies with access to water.
 
 Adds a fishing sub-skill to Animal Handling which is used at FishingSpots (under the Production Tab) to fulfill fishing bills. Fish are like other animal corpses and can be butchered and cooked, though they do rot a little faster so freeze them within a day or so.
 
@@ -13,11 +15,11 @@ FishingSpots have a few basic restrictions. They must be placed in deep water. Y
 Fishing is sped up by the Animal Handling skill, and has a slow skill gain attached as a benefit for fishing all day.
 
 
-Required Mods:
+[h1]Required Mods[/h1]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=818773962]Hugs Lib[/url] (loaded before DireRaids)
 
 
-Current (Sometimes Crude) Translations:
+[h1]Current (Sometimes Crude) Translations[/h1]
 - English
 - French
 - German
@@ -32,68 +34,68 @@ Current (Sometimes Crude) Translations:
 Link me translation fixes/additions and I'll add them in.
 
 
-FAQ:
+[h1]FAQ[/h1]
 
-Aren't there other fishing mods already? Why make this one?
+[b]Aren't there other fishing mods already? Why make this one?[/b]
 
     I found other fishing mods to either make the game significantly easier or to add a ridiculous number of items, buildings, and food types. This mod aims to be a balanced addition to the game. If you're low on food, or your crops got blighted, or a tornado ruined your harvest – you can do some fishing for a quick fix of your food problem. Additionally high animal handling skill can be applied to utilize specialized pawns and make a more reliable source of food for your colony. And it makes a great past time for hats while your sewing machine processes the rest of your leather.
 
 
-Can I add this to an existing game?
+[b]Can I add this to an existing game?[/b]
 
    Yes. But you might not be able to remove it once used in a save.
 
 
-Is this mod compatible with other mods?
+[b]Is this mod compatible with other mods?[/b]
 
    Yes it should be. If you find a mod which manipulates water terrain in weird ways it might try to change the same definitions and be unhappy. But I have a few mods which do that installed and haven't seen any issues at all.
 
 
-Is this mod why my game is slow when I load 10000 raiders?
+[b]Is this mod why my game is slow when I load 10000 raiders?[/b]
 
     No.
 
 
-Are you sure?
+[b]Are you sure?[/b]
 
     On second thought. I changed my mind. I probably should make the 5GB meat texture smaller.  (^_−)
 
 
-Can I live off just fishing?
+[b]Can I live off just fishing?[/b]
 
     Many coastal tribes have proven successful in doing just this throughout history. Most of those also weren't known for their wealth. Jokes aside a zero skill worker can fish ~11 times in a normal day, which can feed 2-3 people for a day if cooked. A 20 skill worker can feed about 8 people a day. This is quite a bit less efficient per unit of time than other food sources. Try a fishing-only run for a challenge.
 
 
-What was that flying by my screen?
+[b]What was that flying by my screen?[/b]
 
     Translating... "Oh say, does that star-spangled banner yet wave. O'er the land of the free and the home of the brave?" ...
 
 
-CHANGES:
+[h1]CHANGES[/h1]
 
-0.18.1
-
+[b]0.18.1[/b]
     Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".
     
 
-0.18.2
-
+[b]0.18.2[/b]
     Adjusted fishing to be slightly slower (to match mod description). Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.
     
-0.18.3
-
+[b]0.18.3[/b]
     Added support for Tribal Essentials and Medieval Times mods' butchering stations.
     
-0.19.0
+[b]0.19.0[/b]
     Beta 19 support!
     
-0.19.1
+[b]0.19.1[/b]
     New butcher spot can now clean fish.
     
-0.19.2
+[b]0.19.2[/b]
     Added audio support for Mac / Linux.   
 
-0.19.3
+[b]0.19.3[/b]
     Added configuration of fishing spot min distances, and fishing work cost to mod settings. Edit these under Options -> Mod Settings.
+    
+[b]0.19.4[/b]
+    Fix for fish meat rotting in RimFridge's coolers (and maybe other situations?). Thanks mrStorrs for finding a fix, as it doesn't occur for all user setups!
     </description>
 </ModMetaData>

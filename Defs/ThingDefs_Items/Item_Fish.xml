@@ -14,13 +14,11 @@
       <texPath>Things/Item/Corpse</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
     <butcherProducts>
       <FishMeat>5</FishMeat>
     </butcherProducts>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <useHitPoints>true</useHitPoints>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>true</alwaysHaulable>
     <stackLimit>15</stackLimit>
     <statBases>
       <MarketValue>10</MarketValue>
@@ -31,15 +29,6 @@
       <DeteriorationRate>10</DeteriorationRate>
       <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
     </statBases>
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>2</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-    <tickerType>Normal</tickerType>
-    <drawGUIOverlay>true</drawGUIOverlay>
     <ingestible>
       <foodType>Meat</foodType>
       <preferability>RawBad</preferability>
@@ -47,25 +36,31 @@
       <ingestSound>RawMeat_Eat</ingestSound>
       <tasteThought>AteRawFood</tasteThought>
     </ingestible>
-    <socialPropernessMatters>true</socialPropernessMatters>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+    <drawGUIOverlay>true</drawGUIOverlay>
   </ThingDef>
 
   <ThingDef ParentName="OrganicProductBase">
     <defName>FishMeat</defName>
     <label>raw fish meat</label>
+    <description>Raw fish. Requires refrigeration or it will spoil quickly.</description>
     <thingClass>ThingWithComps</thingClass>
     <thingCategories>
       <li>MeatRaw</li>
     </thingCategories>
-    <useHitPoints>true</useHitPoints>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>true</alwaysHaulable>
-    <stackLimit>75</stackLimit>
-    <description>Raw fish. Requires refrigeration or it will spoil quickly.</description>
     <graphicData>
       <texPath>Things/Item/Meat/FishMeat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stackLimit>75</stackLimit>
     <statBases>
       <MarketValue>1.1</MarketValue>
       <Mass>0.045</Mass>
@@ -75,14 +70,6 @@
       <DeteriorationRate>10</DeteriorationRate>
       <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
     </statBases>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>2</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-    <tickerType>Normal</tickerType>
-    <drawGUIOverlay>true</drawGUIOverlay>
     <ingestible>
       <foodType>Meat</foodType>
       <preferability>RawBad</preferability>
@@ -90,6 +77,14 @@
       <ingestSound>RawMeat_Eat</ingestSound>
       <tasteThought>AteRawFood</tasteThought>
     </ingestible>
-    <socialPropernessMatters>true</socialPropernessMatters>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+    <drawGUIOverlay>true</drawGUIOverlay>
   </ThingDef>
 </Defs>

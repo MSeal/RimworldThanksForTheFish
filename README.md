@@ -88,3 +88,6 @@ Link me translation fixes/additions and I'll add them in.
 
 #### 0.19.3
 > Added configuration of fishing spot min distances, and fishing work cost to mod settings. Edit these under Options -> Mod Settings.
+
+#### 0.19.4
+> Fix for fish meat rotting in RimFridge's coolers (and maybe other situations?). Thanks mrStorrs for finding a fix, as it doesn't occur for all user setups!

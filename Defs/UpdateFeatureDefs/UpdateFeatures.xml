@@ -3,7 +3,7 @@
   <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
     <modNameReadable>Thanks For All The Fish</modNameReadable>
     <modIdentifier>AllTheFish</modIdentifier>
-    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1406744458</linkUrl>
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1497728159</linkUrl>
   </HugsLib.UpdateFeatureDef>
 
   <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
@@ -46,5 +46,11 @@
     <defName>AllTheFish_0_19_3</defName>
     <assemblyVersion>0.19.3</assemblyVersion>
     <content>Added configuration of |img:Things/Building/Production/FishingSpot|fishing spot min distances, and |img:Mote/FishingRod/RodEast|fishing work cost to mod settings.\n\nEdit these under Options -> Mod Settings.</content>
+  </HugsLib.UpdateFeatureDef>
+  
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_19_4</defName>
+    <assemblyVersion>0.19.4</assemblyVersion>
+    <content>Fix for |img:Things/Item/Meat/FishMeat|fish rotting in RimFridge's |img:Things/Building/Misc/TempControl/Cooler_north|coolers (and maybe other situations?).\n\nThanks mrStorrs for finding a fix, as it doesn't occur for all user setups!</content>
   </HugsLib.UpdateFeatureDef>
 </Defs>
