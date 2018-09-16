@@ -195,7 +195,7 @@ namespace AllTheFish {
             AddDefaultWaterAffordances();
             Logger.Message("MapLoaded: Fishable terrain options: " + string.Join(", ", FetchFishingTagged().ConvertAll<string>(t => t.ToString()).ToArray()));
             
-            IntVec3? launchPoint = RandomWater(map);
+            IntVec3? launchPoint = RandomFishable(map);
             if (launchPoint.HasValue)
             {
                 Logger.Message("Humans are here... so long and thanks for all the fish @ (" + launchPoint + ")");
@@ -219,19 +219,19 @@ namespace AllTheFish {
             }
         }
 
-        public HashSet<IntVec3> AllDeepWater(Map map) {
+        public HashSet<IntVec3> AllFishableCells(Map map) {
             HashSet<IntVec3> water = new HashSet<IntVec3>();
             foreach (var cell in map.AllCells) {
-                if (map.terrainGrid.TerrainAt(cell).HasTag("DeepWater")) {
+                if (map.terrainGrid.TerrainAt(cell).HasTag("Fishable")) {
                     water.Add(cell);
                 }
             }
             return water;
         }
 
-        public IntVec3? RandomWater(Map map) {
+        public IntVec3? RandomFishable(Map map) {
             System.Random randomizer = new System.Random();
-            HashSet<IntVec3> water = AllDeepWater(map);
+            HashSet<IntVec3> water = AllFishableCells(map);
             if (water.Count == 0) {
                 return null;
             } else {
