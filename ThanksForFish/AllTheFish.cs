@@ -21,10 +21,6 @@ namespace AllTheFish {
 
     public class AllTheFishLoader : ModBase {
         public DolphinAway dolphinLeaving;
-        public static TerrainDef Deep = TerrainDef.Named("WaterDeep");
-        public static TerrainDef DeepOcean = TerrainDef.Named("WaterOceanDeep");
-        public static TerrainDef DeepMoving = TerrainDef.Named("WaterMovingChestDeep");
-        private static IntVec3 NoWhere = new IntVec3(-1, -1, -1);
 
         public override string ModIdentifier {
             get { return "AllTheFish"; }
@@ -37,6 +33,12 @@ namespace AllTheFish {
         public static SettingHandle<int> minFishingRadius;
         public static SettingHandle<int> minFishingSize;
         public static SettingHandle<int> fishingWorkCost;
+
+        public static List<TerrainDef> DefaultFishableWaters = new List<TerrainDef> {
+            TerrainDef.Named("WaterDeep"),
+            TerrainDef.Named("WaterOceanDeep"),
+            TerrainDef.Named("WaterMovingChestDeep")
+        };
 
         public static int MIN_FISHING_RADIUS = 10;
         public static int MIN_FISHING_SIZE = 5;
@@ -100,19 +102,109 @@ namespace AllTheFish {
             InjectModSupports();
         }
 
+        public static List<TerrainDef> FetchFishingTagged()
+        {
+            List<TerrainDef> fishables = new List<TerrainDef>();
+            foreach (TerrainDef t in DefDatabase<TerrainDef>.AllDefs)
+            {
+                if (t.HasTag("Fishable"))
+                {
+                    fishables.Add(t);
+                }
+            }
+            return fishables;
+        }
+
+        // The mods references haven't been ported, but just in case they do later and forget the Water tag, we'll update them on the fly
+        public static void CompatabilityAddMissingWaterTags()
+        {
+            // Add tracking water distances under bridges from RF - Basic Bridges mod
+            List<TerrainDef> oldBridges = new List<TerrainDef> {
+                DefDatabase<TerrainDef>.GetNamed("Bridge", false),
+                DefDatabase<TerrainDef>.GetNamed("BridgeWaterDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("BridgeWaterOceanDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingChestDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("BridgeWaterShallow", false),
+                DefDatabase<TerrainDef>.GetNamed("BridgeWaterOceanShallow", false),
+                DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingShallow", false),
+                DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterOceanDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingChestDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterShallow", false),
+                DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterOceanShallow", false),
+                DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingShallow", false),
+                DefDatabase<TerrainDef>.GetNamed("BridgeTKKN_SpringsWater", false)
+            };
+
+            // Add tracking water distances through new water tiles in Nature's Pretty Sweet mod
+            List<TerrainDef> oldNaturesSweetWater = new List<TerrainDef> {
+                DefDatabase<TerrainDef>.GetNamed("TKKN_ColdSpringsWater", false),
+                DefDatabase<TerrainDef>.GetNamed("TKKN_HotSpringsWater", false),
+                DefDatabase<TerrainDef>.GetNamed("TKKN_ColdSprings", false),
+                DefDatabase<TerrainDef>.GetNamed("TKKN_HotSprings", false)
+            };
+
+            foreach (TerrainDef t in oldBridges.Concat(oldNaturesSweetWater))
+            {
+                if (t != null && !t.HasTag("Water"))
+                {
+                    if (t.tags == null)
+                    {
+                        t.tags = new List<string>();
+                    }
+                    t.tags.Add("Water");
+                }
+            }
+        }
+
+        public static void AddDefaultFishableTags()
+        {
+            foreach (TerrainDef t in DefaultFishableWaters)
+            {
+                if (!t.HasTag("NonFishable") && !t.HasTag("Fishable"))
+                {
+                    if (t.tags == null)
+                    {
+                        t.tags = new List<string>();
+                    }
+                    t.tags.Add("Fishable");
+                }
+            }
+        }
+
+        public static void AddDefaultWaterAffordances()
+        {
+            TerrainAffordanceDef waterAffordance = DefDatabase<TerrainAffordanceDef>.GetNamed("Water");
+            foreach (TerrainDef t in DefDatabase<TerrainDef>.AllDefs)
+            {
+                if (t.HasTag("Fishable") && !t.affordances.Contains(waterAffordance))
+                {
+                    t.affordances.Add(waterAffordance);
+                    t.changeable = true;
+                }
+            }
+        }
+
         public override void MapLoaded(Map map) {
             base.MapLoaded(map);
-            Logger.Message("MapLoaded: Adding Dolphin to some deep water");
-            IntVec3 launchPoint = RandomWater(map);
-            if (!launchPoint.Equals(NoWhere))
+
+            CompatabilityAddMissingWaterTags();
+            AddDefaultFishableTags();
+            AddDefaultWaterAffordances();
+            Logger.Message("MapLoaded: Fishable terrain options: " + string.Join(", ", FetchFishingTagged().ConvertAll<string>(t => t.ToString()).ToArray()));
+            
+            IntVec3? launchPoint = RandomWater(map);
+            if (launchPoint.HasValue)
             {
-                Logger.Message("Humans are here... so long and thanks for all the fish @: " + launchPoint);
+                Logger.Message("Humans are here... so long and thanks for all the fish @ (" + launchPoint + ")");
                 DolphinAway dolphin = (DolphinAway)ThingMaker.MakeThing(ThingDef.Named("DolphinAway"), null);
                 // Needs his fish before leaving...
                 Thing fish = ThingMaker.MakeThing(ThingDef.Named("DeadFish"));
                 dolphin.innerContainer.TryAdd(fish);
                 this.dolphinLeaving = (DolphinAway)SkyfallerMaker.MakeSkyfaller(ThingDef.Named("DolphinAway"), dolphin);
-                GenSpawn.Spawn(this.dolphinLeaving, launchPoint, map);
+                GenSpawn.Spawn(this.dolphinLeaving, launchPoint.GetValueOrDefault(), map);
             }
         }
 
@@ -127,25 +219,21 @@ namespace AllTheFish {
             }
         }
 
-        public static bool DeepWaterTerrain(TerrainDef terrainDef) {
-            return terrainDef == Deep || terrainDef == DeepOcean || terrainDef == DeepMoving;
-        }
-
         public HashSet<IntVec3> AllDeepWater(Map map) {
             HashSet<IntVec3> water = new HashSet<IntVec3>();
             foreach (var cell in map.AllCells) {
-                if (DeepWaterTerrain(map.terrainGrid.TerrainAt(cell))) {
+                if (map.terrainGrid.TerrainAt(cell).HasTag("DeepWater")) {
                     water.Add(cell);
                 }
             }
             return water;
         }
 
-        public IntVec3 RandomWater(Map map) {
+        public IntVec3? RandomWater(Map map) {
             System.Random randomizer = new System.Random();
             HashSet<IntVec3> water = AllDeepWater(map);
             if (water.Count == 0) {
-                return NoWhere;
+                return null;
             } else {
                 return water.ElementAt(randomizer.Next(water.Count));
             }
@@ -176,54 +264,8 @@ namespace AllTheFish {
         public static TerrainDef Shallow = TerrainDef.Named("WaterShallow");
         public static TerrainDef ShallowOcean = TerrainDef.Named("WaterOceanShallow");
         public static TerrainDef ShallowMoving = TerrainDef.Named("WaterMovingShallow");
-        public static TerrainDef Deep = TerrainDef.Named("WaterDeep");
-        public static TerrainDef DeepOcean = TerrainDef.Named("WaterOceanDeep");
-        public static TerrainDef DeepMoving = TerrainDef.Named("WaterMovingChestDeep");
 
-        // Add tracking water distances under bridges from RF - Basic Bridges mod
-        public static TerrainDef[] GetAllBridgesWater() {
-          return new TerrainDef[] {
-              DefDatabase<TerrainDef>.GetNamed("Bridge", false),
-              DefDatabase<TerrainDef>.GetNamed("BridgeWaterDeep", false),
-              DefDatabase<TerrainDef>.GetNamed("BridgeWaterOceanDeep", false),
-              DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingDeep", false),
-              DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingChestDeep", false),
-              DefDatabase<TerrainDef>.GetNamed("BridgeWaterShallow", false),
-              DefDatabase<TerrainDef>.GetNamed("BridgeWaterOceanShallow", false),
-              DefDatabase<TerrainDef>.GetNamed("BridgeWaterMovingShallow", false),
-              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterDeep", false),
-              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterOceanDeep", false),
-              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingDeep", false),
-              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingChestDeep", false),
-              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterShallow", false),
-              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterOceanShallow", false),
-              DefDatabase<TerrainDef>.GetNamed("StoneBridgeWaterMovingShallow", false),
-              DefDatabase<TerrainDef>.GetNamed("BridgeTKKN_SpringsWater", false)
-          }.Where(t => t != null).ToArray();
-        }
-
-        // Add tracking water distances through new water tiles in Nature's Pretty Sweet mod
-        public static TerrainDef[] GetNaturesPrettySweetWater() {
-            return new TerrainDef[] {
-                DefDatabase<TerrainDef>.GetNamed("TKKN_ColdSpringsWater", false),
-                DefDatabase<TerrainDef>.GetNamed("TKKN_HotSpringsWater", false),
-                DefDatabase<TerrainDef>.GetNamed("TKKN_ColdSprings", false),
-                DefDatabase<TerrainDef>.GetNamed("TKKN_HotSprings", false)
-            }.Where(t => t != null).ToArray();
-        }
-
-        public static TerrainDef[] GetAllWater() {
-            return new TerrainDef[] { Shallow, ShallowOcean, ShallowMoving, Deep, DeepOcean, DeepMoving };
-        }
-
-        public static bool DeepWaterTerrain(TerrainDef terrainDef) {
-            return terrainDef == Deep || terrainDef == DeepOcean || terrainDef == DeepMoving;
-        }
-
-        public static bool WaterTerrain(TerrainDef terrainDef) {
-            TerrainDef[] combined = GetAllWater().Concat(GetAllBridgesWater()).Concat(GetNaturesPrettySweetWater()).ToArray();
-            return combined.Contains(terrainDef);
-        }
+        
 
         public static IEnumerable<IntVec3> DirectlyConnectedCells(IntVec3 center) {
             yield return new IntVec3(center.x + 1, 0, center.z);
@@ -237,7 +279,7 @@ namespace AllTheFish {
                 if (!explored.Contains(cell) &&
                     bounds.Contains(cell) &&
                     cell.InBounds(map) &&
-                    WaterTerrain(map.terrainGrid.TerrainAt(cell))) {
+                    map.terrainGrid.TerrainAt(cell).HasTag("Water")) {
                     fringe.Add(cell);
                 }
             }
@@ -291,8 +333,12 @@ namespace AllTheFish {
         }
 
         public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null) {
-            if (!DeepWaterTerrain(map.terrainGrid.TerrainAt(loc))) {
+            if (!map.terrainGrid.TerrainAt(loc).HasTag("Fishable")) {
                 return new AcceptanceReport("AllTheFish.DeepWaterFishing".Translate());
+            }
+            if (map.terrainGrid.TerrainAt(loc).HasTag("NoFishingRules"))
+            {
+                return true;
             }
             if (!FishingSpotMinSize(loc, AllTheFishLoader.minFishingSize, map)) {
                 return new AcceptanceReport("AllTheFish.TooSmallFishing".Translate());

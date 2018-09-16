@@ -53,4 +53,10 @@
     <assemblyVersion>0.19.4</assemblyVersion>
     <content>Fix for |img:Things/Item/Meat/FishMeat|fish rotting in RimFridge's |img:Things/Building/Misc/TempControl/Cooler_north|coolers (and maybe other situations?).\n\nThanks mrStorrs for finding a fix, as it doesn't occur for all user setups!</content>
   </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_19_5</defName>
+    <assemblyVersion>0.19.5</assemblyVersion>
+    <content>Fishing made more mod friendly. Now adding a "Fishable" tag to terrain types will allow for fishing there.</content>
+  </HugsLib.UpdateFeatureDef>
 </Defs>

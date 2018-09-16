@@ -15,6 +15,11 @@ Fishing is sped up by the Animal Handling skill, and has a slow skill gain attac
 ## Required Mods:
 - Hugs Lib
 
+## Mod [In]Compatability:
+- Works with [ZARS Simple Fish](https://steamcommunity.com/sharedfiles/filedetails/?id=1513955685)
+- Works with terrain modifying mods like [Terra Project (Core)](https://steamcommunity.com/sharedfiles/filedetails/?id=1414453966)
+- Terraform (load TFATF first to resolve -- might be fixed now?)
+
 ## Current (Sometimes Crude) Translations:
 - English
 - French
@@ -91,3 +96,6 @@ Link me translation fixes/additions and I'll add them in.
 
 #### 0.19.4
 > Fix for fish meat rotting in RimFridge's coolers (and maybe other situations?). Thanks mrStorrs for finding a fix, as it doesn't occur for all user setups!
+
+#### 0.19.5
+> Fishing made more mod friendly. Now adding a "Fishable" tag to terrain types will allow for fishing there. Additionally a "NoFishingRules" tag on terrain will skip checking for water size / distance from other fishing spots. This should enable making custom terrain changes to fit other modding ideas without changing TFATF directly.
