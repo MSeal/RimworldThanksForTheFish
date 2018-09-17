@@ -37,6 +37,7 @@ namespace AllTheFish {
         public static List<TerrainDef> DefaultFishableWaters = new List<TerrainDef> {
             TerrainDef.Named("WaterDeep"),
             TerrainDef.Named("WaterOceanDeep"),
+            TerrainDef.Named("WaterChestDeep"),
             TerrainDef.Named("WaterMovingChestDeep")
         };
 
