@@ -34,11 +34,20 @@ namespace AllTheFish {
         public static SettingHandle<int> minFishingSize;
         public static SettingHandle<int> fishingWorkCost;
 
-        public static List<TerrainDef> DefaultFishableWaters = new List<TerrainDef> {
-            TerrainDef.Named("WaterDeep"),
-            TerrainDef.Named("WaterOceanDeep"),
-            TerrainDef.Named("WaterChestDeep"),
-            TerrainDef.Named("WaterMovingChestDeep")
+        public static List<string> DefaultFishableWaters = new List<string> {
+            "WaterDeep",
+            "WaterOceanDeep",
+            "WaterMovingChestDeep",
+            // Terra Core mod names
+            "WaterSloping",
+            "WaterChestDeep",
+            "WaterHipDeep",
+            "WaterOceanSloping",
+            "WaterOceanChestDeep",
+            "WaterOceanHipDeep",
+            "WaterMovingDeep",
+            "WaterMovingSloping",
+            "WaterMovingHipDeep",
         };
 
         public static int MIN_FISHING_RADIUS = 10;
@@ -147,7 +156,20 @@ namespace AllTheFish {
                 DefDatabase<TerrainDef>.GetNamed("TKKN_HotSprings", false)
             };
 
-            foreach (TerrainDef t in oldBridges.Concat(oldNaturesSweetWater))
+            // Terra Core
+            List<TerrainDef> terraCore = new List<TerrainDef> {
+                DefDatabase<TerrainDef>.GetNamed("WaterSloping", false),
+                DefDatabase<TerrainDef>.GetNamed("WaterChestDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("WaterHipDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("WaterOceanSloping", false),
+                DefDatabase<TerrainDef>.GetNamed("WaterOceanChestDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("WaterOceanHipDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("WaterMovingDeep", false),
+                DefDatabase<TerrainDef>.GetNamed("WaterMovingSloping", false),
+                DefDatabase<TerrainDef>.GetNamed("WaterMovingHipDeep", false)
+            };
+
+            foreach (TerrainDef t in oldBridges.Concat(oldNaturesSweetWater).Concat(terraCore))
             {
                 if (t != null && !t.HasTag("Water"))
                 {
@@ -162,9 +184,10 @@ namespace AllTheFish {
 
         public static void AddDefaultFishableTags()
         {
-            foreach (TerrainDef t in DefaultFishableWaters)
+            foreach (string tname in DefaultFishableWaters)
             {
-                if (!t.HasTag("NonFishable") && !t.HasTag("Fishable"))
+                TerrainDef t = DefDatabase<TerrainDef>.GetNamed(tname, false);
+                if (t != null && !t.HasTag("NonFishable") && !t.HasTag("Fishable"))
                 {
                     if (t.tags == null)
                     {
