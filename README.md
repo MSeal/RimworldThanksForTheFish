@@ -19,6 +19,7 @@ Fishing is sped up by the Animal Handling skill, and has a slow skill gain attac
 - Works with [ZARS Simple Fish](https://steamcommunity.com/sharedfiles/filedetails/?id=1513955685)
 - Works with terrain modifying mods like [Terra Project (Core)](https://steamcommunity.com/sharedfiles/filedetails/?id=1414453966)
 - Terraform (load TFATF first to resolve -- might be fixed now?)
+- Incompatible with [Rainbeau's Fishing](https://steamcommunity.com/sharedfiles/filedetails/?id=1514707987), but it does a very similar thing so pick one :)
 
 ## Current (Sometimes Crude) Translations:
 - English
@@ -49,11 +50,7 @@ Link me translation fixes/additions and I'll add them in.
 
 #### Is this mod why my game is slow when I load 10000 raiders?
 
-> No.
-
-#### Are you sure?
-
-> On second thought. I changed my mind. I probably should make the 5GB meat texture smaller.  (^_−)
+> No. But it does lag if you also install Rainbeau's Fishing mod with this mod (uninstall one of the two to fix).
 
 #### Can I live off just fishing?
 

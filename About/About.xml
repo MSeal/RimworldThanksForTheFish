@@ -16,14 +16,14 @@ Fishing is sped up by the Animal Handling skill, and has a slow skill gain attac
 
 
 [h1]Required Mods[/h1]
-- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=818773962]Hugs Lib[/url] (loaded before DireRaids)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=818773962]Hugs Lib[/url]
 
 
 [h1]Mod [In]Compatability[/h1]
 - Works with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1513955685]ZARS Simple Fish[/url]
 - Works with terrain modifying mods like [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1414453966]Terra Project (Core)[/url]
 - Terraform (load TFATF first to resolve -- might be fixed now?)
-
+- Incompatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1514707987]Rainbeau's Fishing[/url], but it does a very similar thing so pick one :)
 
 [h1]Current (Sometimes Crude) Translations[/h1]
 - English
@@ -44,7 +44,7 @@ Link me translation fixes/additions and I'll add them in.
 
 [b]Aren't there other fishing mods already? Why make this one?[/b]
 
-    I found other fishing mods to either make the game significantly easier or to add a ridiculous number of items, buildings, and food types. This mod aims to be a balanced addition to the game. If you're low on food, or your crops got blighted, or a tornado ruined your harvest – you can do some fishing for a quick fix of your food problem. Additionally high animal handling skill can be applied to utilize specialized pawns and make a more reliable source of food for your colony. And it makes a great past time for hats while your sewing machine processes the rest of your leather.
+    I found other fishing mods (at the time this was origianlly made) to either make the game significantly easier or to add a ridiculous number of items, buildings, and food types. This mod aims to be a balanced addition to the game. If you're low on food, or your crops got blighted, or a tornado ruined your harvest – you can do some fishing for a quick fix of your food problem. Additionally high animal handling skill can be applied to utilize specialized pawns and make a more reliable source of food for your colony. And it makes a great past time for hats while your sewing machine processes the rest of your leather.
 
 
 [b]Can I add this to an existing game?[/b]
@@ -59,12 +59,7 @@ Link me translation fixes/additions and I'll add them in.
 
 [b]Is this mod why my game is slow when I load 10000 raiders?[/b]
 
-    No.
-
-
-[b]Are you sure?[/b]
-
-    On second thought. I changed my mind. I probably should make the 5GB meat texture smaller.  (^_−)
+    No. But it does lag if you also install Rainbeau's Fishing mod with this mod (uninstall one of the two to fix).
 
 
 [b]Can I live off just fishing?[/b]

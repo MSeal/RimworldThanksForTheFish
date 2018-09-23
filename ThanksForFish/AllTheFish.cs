@@ -218,7 +218,13 @@ namespace AllTheFish {
             AddDefaultFishableTags();
             AddDefaultWaterAffordances();
             Logger.Message("MapLoaded: Fishable terrain options: " + string.Join(", ", FetchFishingTagged().ConvertAll<string>(t => t.ToString()).ToArray()));
-            
+
+            // Cleanup extra dolphins
+            foreach (Thing d in map.GetDirectlyHeldThings().Where((Thing t) => (t as DolphinAway) != null)) {
+                Logger.Message("Caught a lazy dolphin... teleporting off-world");
+                d.Destroy();
+            }
+
             IntVec3? launchPoint = RandomFishable(map);
             if (launchPoint.HasValue)
             {
