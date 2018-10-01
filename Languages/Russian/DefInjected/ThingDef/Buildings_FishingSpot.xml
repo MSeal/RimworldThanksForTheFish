@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FishingSpot.label>Рыбное место</FishingSpot.label>
+  <FishingSpot.description>Место для ловли рыбы. Нельзя размещать ближе, чем на 10 клеток к другим рыбным местам. Для ловли рыбы требуется навык "Животноводство".</FishingSpot.description>
+  <FishingSpot_Blueprint.label>Рыбное место (план)</FishingSpot_Blueprint.label>
+
+
+</LanguageData>

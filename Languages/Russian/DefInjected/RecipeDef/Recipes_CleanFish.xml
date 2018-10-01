@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <CleanFish.label>очистить рыбу</CleanFish.label>
-  <CleanFish.description>Очищает рыбу, чтобы получить ее мясо в удобной форме.</CleanFish.description>
-  <CleanFish.jobString>Разделка.</CleanFish.jobString>
-
-  <CleanFishBulk.label>чистая 8 рыб</CleanFishBulk.label>
-  <CleanFishBulk.description>Очищает рыбу, чтобы получить ее мясо в удобной форме.</CleanFishBulk.description>
-  <CleanFishBulk.jobString>Разделка.</CleanFishBulk.jobString>
+  <CleanFish.label>почистить рыбу</CleanFish.label>
+  <CleanFish.description>Почистить рыбу, чтобы получить ее мясо.</CleanFish.description>
+  <CleanFish.jobString>Чистит рыбу.</CleanFish.jobString>
+  <CleanFishBulk.label>почистить 8 рыб</CleanFishBulk.label>
+  <CleanFishBulk.description>Почистить сразу 8 рыб, чтобы получить их мясо</CleanFishBulk.description>
+  <CleanFishBulk.jobString>Чистит рыбу.</CleanFishBulk.jobString>
 </LanguageData>

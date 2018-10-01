@@ -96,3 +96,6 @@ Link me translation fixes/additions and I'll add them in.
 
 #### 0.19.5
 > Fishing made more mod friendly. Now adding a "Fishable" tag to terrain types will allow for fishing there. Additionally a "NoFishingRules" tag on terrain will skip checking for water size / distance from other fishing spots. This should enable making custom terrain changes to fit other modding ideas without changing TFATF directly.
+
+#### 0.19.6
+> Improved graphics and russian translation.

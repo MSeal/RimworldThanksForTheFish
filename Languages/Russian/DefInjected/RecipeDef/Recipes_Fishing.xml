@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <CatchFish.label>поймать рыбу</CatchFish.label>
-  <CatchFish.description>Захватывает некоторые черви и вырывает рыбу.</CatchFish.description>
-  <CatchFish.jobString>Рыбалка.</CatchFish.jobString>
+  <CatchFish.label>ловить рыбу</CatchFish.label>
+  <CatchFish.description>Ловить рыбу с помощью удочки. Требуется навык животноводства.</CatchFish.description>
+  <CatchFish.jobString>Рыбачит.</CatchFish.jobString>
 </LanguageData>

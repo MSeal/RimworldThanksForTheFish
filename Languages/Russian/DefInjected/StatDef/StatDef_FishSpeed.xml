@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FishSpeed.label>скорость рыбалки</FishSpeed.label>
+  <FishSpeed.description>Скорость, с которой колонист ловит рыбу. Зависит от навыка "Животноводство".</FishSpeed.description>
+
+
+</LanguageData>

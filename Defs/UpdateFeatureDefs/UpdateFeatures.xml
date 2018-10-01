@@ -59,4 +59,10 @@
     <assemblyVersion>0.19.5</assemblyVersion>
     <content>Fishing made more mod friendly. Now adding a "Fishable" tag to terrain types will allow for fishing there.</content>
   </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_0_19_6</defName>
+    <assemblyVersion>0.19.6</assemblyVersion>
+    <content>Improved graphics |img:Things/Item/Corpse/Fish_a,Things/Item/Corpse/Fish_b,Things/Item/Meat/FishMeat|and russian translations courtesy of Daniledman. спасибо</content>
+  </HugsLib.UpdateFeatureDef>
 </Defs>

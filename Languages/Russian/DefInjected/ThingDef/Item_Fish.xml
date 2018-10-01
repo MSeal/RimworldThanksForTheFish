@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DeadFish.label>Сырая рыба</DeadFish.label>
+  <DeadFish.description>Сырая рыба. Можно почистить рыбу на разделочных местах/столах.</DeadFish.description>
+
+  <FishMeat.label>рыбное филе</FishMeat.label>
+  <FishMeat.description>Сырое филе рыбы. Требуется охлаждение, филе быстро портится.</FishMeat.description>
+
+
+</LanguageData>
