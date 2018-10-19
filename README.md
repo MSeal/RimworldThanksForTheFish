@@ -1,6 +1,6 @@
 ﻿# RimworldThanksForTheFish
 
-![Version](https://img.shields.io/badge/Rimworld-B19-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1497728159)
+![Version](https://img.shields.io/badge/Rimworld-B19-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1542362283)
 
 ![Alt text](About/Preview.png?raw=true "ThanksForAllTheFish")
 
@@ -16,22 +16,19 @@ Fishing is sped up by the Animal Handling skill, and has a slow skill gain attac
 - Hugs Lib
 
 ## Mod [In]Compatability:
-- Works with [ZARS Simple Fish](https://steamcommunity.com/sharedfiles/filedetails/?id=1513955685)
-- Works with terrain modifying mods like [Terra Project (Core)](https://steamcommunity.com/sharedfiles/filedetails/?id=1414453966)
-- Terraform (load TFATF first to resolve -- might be fixed now?)
-- Incompatible with [Rainbeau's Fishing](https://steamcommunity.com/sharedfiles/filedetails/?id=1514707987), but it does a very similar thing so pick one :)
+- Incompatible with [Rainbeau's Fishing](https://steamcommunity.com/sharedfiles/filedetails/?id=1539311991), but it does a very similar thing so pick one :)
 
 ## Current (Sometimes Crude) Translations:
 - English
-- French
-- German
-- Chinese (Simplified)
-- Korean
-- Japanese
-- Polish
-- Portuguese
-- Russian
-- Spanish
+- Française
+- Deutsche
+- 中文
+- 한국어
+- 日本語
+- Polskie
+- Portuguesa
+- Pусский
+- Español
 
 Link me translation fixes/additions and I'll add them in.
 
@@ -44,9 +41,9 @@ Link me translation fixes/additions and I'll add them in.
 
 > Yes. But you might not be able to remove it once used in a save.
 
-#### Is this mod compatible with other mods?
+#### Can you change how long it takes to fish?
 
-> Yes it should be. If you find a mod which manipulates water terrain in weird ways it might try to change the same definitions and be unhappy. But I have a few mods which do that installed and haven't seen any issues at all.
+> Yes. Go to the Mod Settings under Options and adjust any of the settings you feel should be different for your current colony.
 
 #### Is this mod why my game is slow when I load 10000 raiders?
 
@@ -63,29 +60,21 @@ Link me translation fixes/additions and I'll add them in.
 ## Changes
 
 #### 0.18.1
-
 > Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".
 
 #### 0.18.2
-
 > Adjusted fishing to be slightly slower (to match mod description). Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.
 
-
 #### 0.18.3
-
 > Added support for Tribal Essentials and Medieval Times mods' butchering stations.
 
-
 #### 0.19.0
-
 > Beta 19 support!
 
 #### 0.19.1
-
 > New butcher spot can now clean fish.
 
 #### 0.19.2
-
 > Added audio support for Mac / Linux.
 
 #### 0.19.3
@@ -99,3 +88,6 @@ Link me translation fixes/additions and I'll add them in.
 
 #### 0.19.6
 > Improved graphics and russian translation.
+
+#### 1.0.0
+> Rimworld 1.0 Support

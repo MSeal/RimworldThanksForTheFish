@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[B19] Thanks For All The Fish</name>
+    <name>[1.0] Thanks For All The Fish</name>
     <author>Pyrce</author>
     <url>https://github.com/MSeal/RimworldThanksForTheFish</url>
-    <targetVersion>0.19.2009</targetVersion>
-    <description>[h1][B19] Thanks For All The Fish[/h1]
+    <targetVersion>1.0.2059</targetVersion>
+    <description>[h1][1.0] Thanks For All The Fish[/h1]
     
 A simple fishing mod designed to provide a food supplement to colonies with access to water.
 
@@ -20,22 +20,19 @@ Fishing is sped up by the Animal Handling skill, and has a slow skill gain attac
 
 
 [h1]Mod [In]Compatability[/h1]
-- Works with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1513955685]ZARS Simple Fish[/url]
-- Works with terrain modifying mods like [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1414453966]Terra Project (Core)[/url]
-- Terraform (load TFATF first to resolve -- might be fixed now?)
-- Incompatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1514707987]Rainbeau's Fishing[/url], but it does a very similar thing so pick one :)
+- Incompatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1539311991]Rainbeau's Fishing[/url], but it does a very similar thing so pick one :)
 
 [h1]Current (Sometimes Crude) Translations[/h1]
 - English
-- French
-- German
-- Chinese (Simplified)
-- Korean
-- Japanese
-- Polish
-- Portuguese
-- Russian
-- Spanish
+- Française
+- Deutsche
+- 中文
+- 한국어
+- 日本語
+- Polskie
+- Portuguesa
+- Pусский
+- Español
 
 Link me translation fixes/additions and I'll add them in.
 
@@ -52,9 +49,9 @@ Link me translation fixes/additions and I'll add them in.
    Yes. But you might not be able to remove it once used in a save.
 
 
-[b]Is this mod compatible with other mods?[/b]
+[b]Can you change how long it takes to fish?[/b]
 
-   Yes it should be. If you find a mod which manipulates water terrain in weird ways it might try to change the same definitions and be unhappy. But I have a few mods which do that installed and haven't seen any issues at all.
+   Yes. Go to the Mod Settings under Options and adjust any of the settings you feel should be different for your current colony.
 
 
 [b]Is this mod why my game is slow when I load 10000 raiders?[/b]
@@ -70,39 +67,5 @@ Link me translation fixes/additions and I'll add them in.
 [b]What was that flying by my screen?[/b]
 
     Translating... "Oh say, does that star-spangled banner yet wave. O'er the land of the free and the home of the brave?" ...
-
-
-[h1]CHANGES[/h1]
-
-[b]0.18.1[/b]
-    Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".
-    
-
-[b]0.18.2[/b]
-    Adjusted fishing to be slightly slower (to match mod description). Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.
-    
-[b]0.18.3[/b]
-    Added support for Tribal Essentials and Medieval Times mods' butchering stations.
-    
-[b]0.19.0[/b]
-    Beta 19 support!
-    
-[b]0.19.1[/b]
-    New butcher spot can now clean fish.
-    
-[b]0.19.2[/b]
-    Added audio support for Mac / Linux.   
-
-[b]0.19.3[/b]
-    Added configuration of fishing spot min distances, and fishing work cost to mod settings. Edit these under Options -> Mod Settings.
-    
-[b]0.19.4[/b]
-    Fix for fish meat rotting in RimFridge's coolers (and maybe other situations?). Thanks mrStorrs for finding a fix, as it doesn't occur for all user setups!
-
-[b]0.19.5[/b]
-    Fishing made more mod friendly. Now adding a "Fishable" tag to terrain types will allow for fishing there. Additionally a "NoFishingRules" tag on terrain will skip checking for water size / distance from other fishing spots. This should enable making custom terrain changes to fit other modding ideas without changing TFATF directly.
-
-[b]0.19.6[/b]
-    Improved graphics and russian translations courtesy of Daniledman. спасибо
     </description>
 </ModMetaData>
