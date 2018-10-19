@@ -1,6 +1,6 @@
 ﻿# RimworldThanksForTheFish
 
-![Version](https://img.shields.io/badge/Rimworld-B19-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1542362283)
+![Version](https://img.shields.io/badge/Rimworld-1.0-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1542362283)
 
 ![Alt text](About/Preview.png?raw=true "ThanksForAllTheFish")
 
