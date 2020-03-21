@@ -16,9 +16,7 @@
     </li>
   </modDependencies>
   <loadAfter>
-    <li>Ludeon.RimWorld</li>
-    <li>Ludeon.RimWorld.Royalty</li>
-    <li>brrainz.harmony</li>
+    <li>UnlimitedHugs.HugsLib</li>
   </loadAfter>
   <description>[h1]Thanks For All The Fish[/h1]
     
