@@ -1,10 +1,10 @@
 ﻿# RimworldThanksForTheFish
 
-![Version](https://img.shields.io/badge/Rimworld-1.0-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1542362283)
+![Version](https://img.shields.io/badge/Rimworld-1.1-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1542362283)
 
 ![Alt text](About/Preview.png?raw=true "ThanksForAllTheFish")
 
-[B19] A simple fishing mod designed to provide a food supplement to colonies with access to water.
+A simple fishing mod designed to provide a food supplement to colonies with access to water.
 
 Adds a fishing sub-skill to Animal Handling which is used at FishingSpots (under the Production Tab) to fulfill fishing bills. Fish are like other animal corpses and can be butchered and cooked, though they do rot a little faster so freeze them within a day or so.
 
@@ -21,7 +21,7 @@ Fishing is sped up by the Animal Handling skill, and has a slow skill gain attac
 ## Current (Sometimes Crude) Translations:
 - English
 - Française
-- Deutsche
+- Deutsch
 - 中文
 - 한국어
 - 日本語
@@ -59,35 +59,38 @@ Link me translation fixes/additions and I'll add them in.
 
 ## Changes
 
-#### 0.18.1
-> Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".
+#### 1.1.0
+> Rimworld 1.1 Support
 
-#### 0.18.2
-> Adjusted fishing to be slightly slower (to match mod description). Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.
-
-#### 0.18.3
-> Added support for Tribal Essentials and Medieval Times mods' butchering stations.
-
-#### 0.19.0
-> Beta 19 support!
-
-#### 0.19.1
-> New butcher spot can now clean fish.
-
-#### 0.19.2
-> Added audio support for Mac / Linux.
-
-#### 0.19.3
-> Added configuration of fishing spot min distances, and fishing work cost to mod settings. Edit these under Options -> Mod Settings.
-
-#### 0.19.4
-> Fix for fish meat rotting in RimFridge's coolers (and maybe other situations?). Thanks mrStorrs for finding a fix, as it doesn't occur for all user setups!
-
-#### 0.19.5
-> Fishing made more mod friendly. Now adding a "Fishable" tag to terrain types will allow for fishing there. Additionally a "NoFishingRules" tag on terrain will skip checking for water size / distance from other fishing spots. This should enable making custom terrain changes to fit other modding ideas without changing TFATF directly.
+#### 1.0.0
+> Rimworld 1.0 Support
 
 #### 0.19.6
 > Improved graphics and russian translation.
 
-#### 1.0.0
-> Rimworld 1.0 Support
+#### 0.19.5
+> Fishing made more mod friendly. Now adding a "Fishable" tag to terrain types will allow for fishing there. Additionally a "NoFishingRules" tag on terrain will skip checking for water size / distance from other fishing spots. This should enable making custom terrain changes to fit other modding ideas without changing TFATF directly.
+
+#### 0.19.4
+> Fix for fish meat rotting in RimFridge's coolers (and maybe other situations?). Thanks mrStorrs for finding a fix, as it doesn't occur for all user setups!
+
+#### 0.19.3
+> Added configuration of fishing spot min distances, and fishing work cost to mod settings. Edit these under Options -> Mod Settings.
+
+#### 0.19.2
+> Added audio support for Mac / Linux.
+
+#### 0.19.1
+> New butcher spot can now clean fish.
+
+#### 0.19.0
+> Beta 19 support!
+
+#### 0.18.3
+> Added support for Tribal Essentials and Medieval Times mods' butchering stations.
+
+#### 0.18.2
+> Adjusted fishing to be slightly slower (to match mod description). Made bridges from RF - Bridges mod and springs from Nature's Pretty Sweet mod be respected for water distances calculations.
+
+#### 0.18.1
+> Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".

@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[1.0] Thanks For All The Fish</name>
-    <author>Pyrce</author>
-    <url>https://github.com/MSeal/RimworldThanksForTheFish</url>
-    <targetVersion>1.0.2059</targetVersion>
-    <description>[h1][1.0] Thanks For All The Fish[/h1]
+  <name>Thanks For All The Fish</name>
+  <author>Pyrce</author>
+  <packageId>pyrce.thanks.for.all.the.fish</packageId>
+  <url>https://github.com/MSeal/RimworldThanksForTheFish</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <displayName>HugsLib</displayName>
+      <packageId>UnlimitedHugs.HugsLib</packageId>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <description>[h1]Thanks For All The Fish[/h1]
     
 A simple fishing mod designed to provide a food supplement to colonies with access to water.
 
@@ -25,7 +41,7 @@ Fishing is sped up by the Animal Handling skill, and has a slow skill gain attac
 [h1]Current (Sometimes Crude) Translations[/h1]
 - English
 - Française
-- Deutsche
+- Deutsch
 - 中文
 - 한국어
 - 日本語
@@ -41,7 +57,7 @@ Link me translation fixes/additions and I'll add them in.
 
 [b]Aren't there other fishing mods already? Why make this one?[/b]
 
-    I found other fishing mods (at the time this was origianlly made) to either make the game significantly easier or to add a ridiculous number of items, buildings, and food types. This mod aims to be a balanced addition to the game. If you're low on food, or your crops got blighted, or a tornado ruined your harvest – you can do some fishing for a quick fix of your food problem. Additionally high animal handling skill can be applied to utilize specialized pawns and make a more reliable source of food for your colony. And it makes a great past time for hats while your sewing machine processes the rest of your leather.
+    I found other fishing mods (at the time this was originally made) to either make the game significantly easier or to add a ridiculous number of items, buildings, and food types. This mod aims to be a balanced addition to the game. If you're low on food, or your crops got blighted, or a tornado ruined your harvest – you can do some fishing for a quick fix of your food problem. Additionally high animal handling skill can be applied to utilize specialized pawns and make a more reliable source of food for your colony. And it makes a great past time for hats while your sewing machine processes the rest of your leather.
 
 
 [b]Can I add this to an existing game?[/b]

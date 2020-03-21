@@ -362,7 +362,7 @@ namespace AllTheFish {
             return true;
         }
 
-        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null) {
+        public override AcceptanceReport AllowsPlacing(BuildableDef checkingDef, IntVec3 loc, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null) {
             if (!map.terrainGrid.TerrainAt(loc).HasTag("Fishable")) {
                 return new AcceptanceReport("AllTheFish.DeepWaterFishing".Translate());
             }

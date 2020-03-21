@@ -7,7 +7,7 @@
   </HugsLib.UpdateFeatureDef>
 
   <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
-    <defName>AllTheFish_0_19_0</defName>
+    <defName>AllTheFish_0_18_1</defName>
     <assemblyVersion>0.18.1</assemblyVersion>
     <content>Changed fish butchering to new quicker bills "Clean Fish" and "Clean 8 Fish".|img:Things/Item/Corpse/Fish_a,Things/Item/Meat/FishMeat|caption:now faster.</content>
   </HugsLib.UpdateFeatureDef>
@@ -64,5 +64,11 @@
     <defName>AllTheFish_0_19_6</defName>
     <assemblyVersion>0.19.6</assemblyVersion>
     <content>Improved graphics |img:Things/Item/Corpse/Fish_a,Things/Item/Corpse/Fish_b,Things/Item/Meat/FishMeat|and russian translations courtesy of Daniledman. спасибо</content>
+  </HugsLib.UpdateFeatureDef>
+
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>AllTheFish_1_1_0</defName>
+    <assemblyVersion>1.1.0</assemblyVersion>
+    <content>Updated for 1.1!.</content>
   </HugsLib.UpdateFeatureDef>
 </Defs>
