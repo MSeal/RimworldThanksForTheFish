@@ -1,6 +1,6 @@
 ﻿# RimworldThanksForTheFish
 
-![Version](https://img.shields.io/badge/Rimworld-1.1-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1542362283)
+![Version](https://img.shields.io/badge/Rimworld-1.2-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1542362283)
 
 ![Alt text](About/Preview.png?raw=true "ThanksForAllTheFish")
 
@@ -58,6 +58,9 @@ Link me translation fixes/additions and I'll add them in.
 > Translating... "Oh say, does that star-spangled banner yet wave. O'er the land of the free and the home of the brave?" ...
 
 ## Changes
+
+#### 1.2.0
+> Rimworld 1.2 Support
 
 #### 1.1.0
 > Rimworld 1.1 Support
