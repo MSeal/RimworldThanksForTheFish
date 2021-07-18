@@ -74,7 +74,7 @@ namespace AllTheFish {
                "AllTheFish.FishingWorkCostSettingDescription".Translate(),
                DEFAULT_FISHING_WORK_COST,
                Validators.IntRangeValidator(1, 32767));
-            fishingWorkCost.OnValueChanged = newValue => { ApplyFishingCostSetting(); };
+            fishingWorkCost.ValueChanged += newValue => { ApplyFishingCostSetting(); };
         }
 
         public void ApplyFishingCostSetting() {
